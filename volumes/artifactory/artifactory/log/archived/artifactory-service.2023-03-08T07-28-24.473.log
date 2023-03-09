@@ -1,0 +1,57 @@
+2023-03-07T08:21:47.875Z [jfrt ] [INFO ] [8817b23d2de5603e] [aseBundleCleanupServiceImpl:84] [de5603e|art-exec-124] - Starting to cleanup incomplete Release Bundles
+2023-03-07T08:21:47.886Z [jfrt ] [INFO ] [8817b23d2de5603e] [b.ReleaseBundleServiceImpl:475] [de5603e|art-exec-124] - Finished deleting orphan/unidentified items from _intransit repository
+2023-03-07T08:21:47.887Z [jfrt ] [INFO ] [8817b23d2de5603e] [aseBundleCleanupServiceImpl:90] [de5603e|art-exec-124] - Finished incomplete Release Bundles cleanup
+2023-03-07T09:21:47.877Z [jfrt ] [INFO ] [e6fca9f6afddaabf] [aseBundleCleanupServiceImpl:84] [fddaabf|art-exec-137] - Starting to cleanup incomplete Release Bundles
+2023-03-07T09:21:47.878Z [jfrt ] [INFO ] [e6fca9f6afddaabf] [b.ReleaseBundleServiceImpl:475] [fddaabf|art-exec-137] - Finished deleting orphan/unidentified items from _intransit repository
+2023-03-07T09:21:47.878Z [jfrt ] [INFO ] [e6fca9f6afddaabf] [aseBundleCleanupServiceImpl:90] [fddaabf|art-exec-137] - Finished incomplete Release Bundles cleanup
+2023-03-07T09:21:49.788Z [jfrt ] [INFO ] [a2f3061426a2af7f] [adsFolderCleanupServiceImpl:52] [6a2af7f|art-exec-118] - Starting docker temp folder cleanup
+2023-03-07T09:21:49.810Z [jfrt ] [INFO ] [a2f3061426a2af7f] [adsFolderCleanupServiceImpl:54] [6a2af7f|art-exec-118] - Docker temp folder cleanup finished, time took: 22 millis
+2023-03-07T10:21:47.877Z [jfrt ] [INFO ] [471bdc2fcf1f7942] [aseBundleCleanupServiceImpl:84] [f1f7942|art-exec-129] - Starting to cleanup incomplete Release Bundles
+2023-03-07T10:21:47.879Z [jfrt ] [INFO ] [471bdc2fcf1f7942] [b.ReleaseBundleServiceImpl:475] [f1f7942|art-exec-129] - Finished deleting orphan/unidentified items from _intransit repository
+2023-03-07T10:21:47.880Z [jfrt ] [INFO ] [471bdc2fcf1f7942] [aseBundleCleanupServiceImpl:90] [f1f7942|art-exec-129] - Finished incomplete Release Bundles cleanup
+2023-03-07T10:40:50.211Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-129] - Access License Client 1 - target server is unavailable or connection was shutdown
+2023-03-07T10:40:50.212Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-119] - Access Platform Config Client 2 - target server is unavailable or connection was shutdown
+2023-03-07T10:40:50.212Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-128] - Access Platform Config Client 4 - target server is unavailable or connection was shutdown
+2023-03-07T10:40:50.211Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-122] - Access Platform Config Client 3 - target server is unavailable or connection was shutdown
+2023-03-07T10:40:50.213Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-124] - Access Projects Client 1 - target server is unavailable or connection was shutdown
+2023-03-07T10:40:50.213Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-100] - Access Platform Config Client 1 - target server is unavailable or connection was shutdown
+2023-03-07T10:40:50.214Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-112] - Access Permission Client 1 - target server is unavailable or connection was shutdown
+2023-03-07T10:40:53.077Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [scribe ccsslcnsclnt1] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-07T10:40:53.142Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [ ccsspltfrmcnfgclnt1] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-07T10:40:53.730Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [ ccsspltfrmcnfgclnt2] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-07T10:40:53.990Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [ ccsspltfrmcnfgclnt3] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-07T10:40:54.275Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [ ccsspltfrmcnfgclnt4] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-07T10:40:54.635Z [jfrt ] [INFO ] [                ] [ectedEntitiesStreamObserver:34] [ribe ccssprmssnclnt1] - publishing full invalidation and attempting to resubscribe to affected permissions changes
+2023-03-07T11:21:47.875Z [jfrt ] [INFO ] [d8929044ef0b1100] [aseBundleCleanupServiceImpl:84] [f0b1100|art-exec-140] - Starting to cleanup incomplete Release Bundles
+2023-03-07T11:21:47.876Z [jfrt ] [INFO ] [d8929044ef0b1100] [b.ReleaseBundleServiceImpl:475] [f0b1100|art-exec-140] - Finished deleting orphan/unidentified items from _intransit repository
+2023-03-07T11:21:47.877Z [jfrt ] [INFO ] [d8929044ef0b1100] [aseBundleCleanupServiceImpl:90] [f0b1100|art-exec-140] - Finished incomplete Release Bundles cleanup
+2023-03-07T11:22:19.528Z [jfrt ] [INFO ] [1f0762d6b266dd0e] [a.e.EventsLogCleanUpService:79] [266dd0e|art-exec-136] - Starting cleanup of old events from event log
+2023-03-07T11:22:19.530Z [jfrt ] [INFO ] [1f0762d6b266dd0e] [a.e.EventsLogCleanUpService:81] [266dd0e|art-exec-136] - No events to cleanup in events log
+2023-03-07T12:00:00.001Z [jfrt ] [INFO ] [15d0aa87c4c4f7ff] [.s.d.b.s.BinaryServiceImpl:753] [4c4f7ff|art-exec-144] - Triggering Garbage Collection
+2023-03-07T12:00:00.002Z [jfrt ] [INFO ] [15d0aa87c4c4f7ff] [.s.d.b.s.g.GarbageCollector:66] [4c4f7ff|art-exec-144] - Starting GC strategy 'TRASH_AND_BINARIES'
+2023-03-07T12:00:00.003Z [jfrt ] [INFO ] [15d0aa87c4c4f7ff] [.s.d.b.s.g.GarbageCollector:68] [4c4f7ff|art-exec-144] - Finished GC Strategy 'TRASH_AND_BINARIES'
+2023-03-07T12:21:47.877Z [jfrt ] [INFO ] [833c229e56f27346] [aseBundleCleanupServiceImpl:84] [6f27346|art-exec-124] - Starting to cleanup incomplete Release Bundles
+2023-03-07T12:21:47.878Z [jfrt ] [INFO ] [833c229e56f27346] [b.ReleaseBundleServiceImpl:475] [6f27346|art-exec-124] - Finished deleting orphan/unidentified items from _intransit repository
+2023-03-07T12:21:47.878Z [jfrt ] [INFO ] [833c229e56f27346] [aseBundleCleanupServiceImpl:90] [6f27346|art-exec-124] - Finished incomplete Release Bundles cleanup
+2023-03-07T13:21:47.875Z [jfrt ] [INFO ] [130b76cb25b39e70] [aseBundleCleanupServiceImpl:84] [5b39e70|art-exec-129] - Starting to cleanup incomplete Release Bundles
+2023-03-07T13:21:47.876Z [jfrt ] [INFO ] [130b76cb25b39e70] [b.ReleaseBundleServiceImpl:475] [5b39e70|art-exec-129] - Finished deleting orphan/unidentified items from _intransit repository
+2023-03-07T13:21:47.876Z [jfrt ] [INFO ] [130b76cb25b39e70] [aseBundleCleanupServiceImpl:90] [5b39e70|art-exec-129] - Finished incomplete Release Bundles cleanup
+2023-03-07T14:21:47.885Z [jfrt ] [INFO ] [4c92110d456886a8] [aseBundleCleanupServiceImpl:84] [56886a8|art-exec-128] - Starting to cleanup incomplete Release Bundles
+2023-03-07T14:21:47.886Z [jfrt ] [INFO ] [4c92110d456886a8] [b.ReleaseBundleServiceImpl:475] [56886a8|art-exec-128] - Finished deleting orphan/unidentified items from _intransit repository
+2023-03-07T14:21:47.886Z [jfrt ] [INFO ] [4c92110d456886a8] [aseBundleCleanupServiceImpl:90] [56886a8|art-exec-128] - Finished incomplete Release Bundles cleanup
+2023-03-07T14:47:34.097Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-174] - Access License Client 1 - target server is unavailable or connection was shutdown
+2023-03-07T14:47:34.097Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-175] - Access Platform Config Client 2 - target server is unavailable or connection was shutdown
+2023-03-07T14:47:34.097Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-177] - Access Platform Config Client 3 - target server is unavailable or connection was shutdown
+2023-03-07T14:47:34.098Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-181] - Access Projects Client 1 - target server is unavailable or connection was shutdown
+2023-03-07T14:47:34.097Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-185] - Access Platform Config Client 1 - target server is unavailable or connection was shutdown
+2023-03-07T14:47:34.098Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-184] - Access Platform Config Client 4 - target server is unavailable or connection was shutdown
+2023-03-07T14:47:34.098Z [jfrt ] [WARN ] [                ] [j.a.c.g.GrpcStreamObserver:112] [default-executor-184] - Access Permission Client 1 - target server is unavailable or connection was shutdown
+2023-03-07T14:47:34.277Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [ ccsspltfrmcnfgclnt4] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-07T14:47:34.634Z [jfrt ] [INFO ] [                ] [ectedEntitiesStreamObserver:34] [ribe ccssprmssnclnt1] - publishing full invalidation and attempting to resubscribe to affected permissions changes
+2023-03-07T14:47:38.088Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [scribe ccsslcnsclnt1] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-07T14:47:38.142Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [ ccsspltfrmcnfgclnt1] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-07T14:47:38.731Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [ ccsspltfrmcnfgclnt2] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-07T14:47:38.991Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [ ccsspltfrmcnfgclnt3] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-07T15:21:47.875Z [jfrt ] [INFO ] [f35f3826b57f6f79] [aseBundleCleanupServiceImpl:84] [57f6f79|art-exec-143] - Starting to cleanup incomplete Release Bundles
+2023-03-07T15:21:47.886Z [jfrt ] [INFO ] [f35f3826b57f6f79] [b.ReleaseBundleServiceImpl:475] [57f6f79|art-exec-143] - Finished deleting orphan/unidentified items from _intransit repository
+2023-03-07T15:21:47.887Z [jfrt ] [INFO ] [f35f3826b57f6f79] [aseBundleCleanupServiceImpl:90] [57f6f79|art-exec-143] - Finished incomplete Release Bundles cleanup

@@ -1,0 +1,374 @@
+27-Feb-2023 08:48:30.865 WARNING [jf-common-pool-312] com.google.common.cache.LocalCache$Segment$1.run Exception thrown during refresh
+	java.util.concurrent.ExecutionException: org.jfrog.access.client.AccessClientException: Unable to connect to Access server: Read timed out
+		at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566)
+		at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:527)
+		at com.google.common.util.concurrent.FluentFuture$TrustedFuture.get(FluentFuture.java:88)
+		at com.google.common.util.concurrent.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:240)
+		at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2313)
+		at com.google.common.cache.LocalCache$Segment$1.run(LocalCache.java:2293)
+		at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+		at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1213)
+		at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:983)
+		at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:771)
+		at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:100)
+		at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+		at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1213)
+		at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:983)
+		at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:771)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.afterRanInterruptibly(TrustedListenableFutureTask.java:133)
+		at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:133)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:78)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: org.jfrog.access.client.AccessClientException: Unable to connect to Access server: Read timed out
+		at org.jfrog.access.client.http.AccessHttpClient.restCall(AccessHttpClient.java:156)
+		at org.jfrog.access.client.AccessClientBaseImpl.makeRequestAndParseResponse(AccessClientBaseImpl.java:175)
+		at org.jfrog.access.client.AccessClientBaseImpl.findAll(AccessClientBaseImpl.java:122)
+		at org.jfrog.access.client.AccessClientBaseImpl.findAll(AccessClientBaseImpl.java:111)
+		at org.jfrog.access.client.config.ConfigClientImpl.getMTlsConfiguration(ConfigClientImpl.java:74)
+		at org.jfrog.access.client.AccessClientContext$1.lambda$reload$0(AccessClientContext.java:423)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:125)
+		at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:69)
+		... 4 more
+	Caused by: java.net.SocketTimeoutException: Read timed out
+		at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+		at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+		at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+		at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+		at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+		at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+		at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+		at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+		at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+		at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+		at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+		at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+		at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+		at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+		at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+		at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+		at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+		at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+		at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+		at org.jfrog.client.http.CloseableHttpClientDecorator.doExecute(CloseableHttpClientDecorator.java:109)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+		at org.jfrog.access.client.http.AccessHttpClient.restCall(AccessHttpClient.java:140)
+		... 11 more
+27-Feb-2023 13:33:24.782 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+27-Feb-2023 13:33:24.854 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8091"]
+27-Feb-2023 13:33:24.859 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+27-Feb-2023 13:33:24.873 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+27-Feb-2023 13:33:24.882 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.62-jfrog2]
+27-Feb-2023 13:33:24.928 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml]
+27-Feb-2023 13:33:24.930 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml]
+27-Feb-2023 13:33:24.988 WARNING [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/artifactory] in deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has been ignored
+27-Feb-2023 13:33:24.989 WARNING [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+27-Feb-2023 13:33:25.000 WARNING [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/access.war] inside the host appBase has been specified, and will be ignored
+27-Feb-2023 13:33:25.008 WARNING [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/artifactory.war] inside the host appBase has been specified, and will be ignored
+27-Feb-2023 13:33:39.369 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has finished in [14,433] ms
+27-Feb-2023 13:34:11.184 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml] has finished in [46,257] ms
+27-Feb-2023 13:34:11.192 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/ROOT]
+27-Feb-2023 13:34:11.268 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/ROOT] has finished in [75] ms
+27-Feb-2023 13:34:11.285 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+27-Feb-2023 13:34:11.408 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8091"]
+27-Feb-2023 13:34:11.416 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+27-Feb-2023 13:34:15.858 WARNING [http-nio-127.0.0.1-8040-exec-3] org.glassfish.jersey.internal.Errors.logErrors The following warnings have been detected: WARNING: The (sub)resource method editUserProfile in org.jfrog.access.server.rest.resource.ui.userprofile.UiUserProfileResource contains empty path annotation.
+
+27-Feb-2023 13:34:31.147 SEVERE [2023-02-27T13:34:27.799Z|3e992fc77ed1b6fd|art-exec-1] org.glassfish.jersey.server.spring.SpringComponentProvider.bind None or multiple beans found in Spring context for type class org.artifactory.rest.filter.LicenseRestFilter, skipping the type.
+27-Feb-2023 14:36:13.561 WARNING [jf-common-pool-37] com.google.common.cache.LocalCache$Segment$1.run Exception thrown during refresh
+	java.util.concurrent.ExecutionException: org.jfrog.access.client.AccessClientException: Unable to connect to Access server: Read timed out
+		at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566)
+		at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:527)
+		at com.google.common.util.concurrent.FluentFuture$TrustedFuture.get(FluentFuture.java:88)
+		at com.google.common.util.concurrent.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:240)
+		at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2313)
+		at com.google.common.cache.LocalCache$Segment$1.run(LocalCache.java:2293)
+		at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+		at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1213)
+		at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:983)
+		at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:771)
+		at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:100)
+		at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+		at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1213)
+		at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:983)
+		at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:771)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.afterRanInterruptibly(TrustedListenableFutureTask.java:133)
+		at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:133)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:78)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: org.jfrog.access.client.AccessClientException: Unable to connect to Access server: Read timed out
+		at org.jfrog.access.client.http.AccessHttpClient.restCall(AccessHttpClient.java:156)
+		at org.jfrog.access.client.AccessClientBaseImpl.makeRequestAndParseResponse(AccessClientBaseImpl.java:175)
+		at org.jfrog.access.client.AccessClientBaseImpl.findAll(AccessClientBaseImpl.java:122)
+		at org.jfrog.access.client.AccessClientBaseImpl.findAll(AccessClientBaseImpl.java:111)
+		at org.jfrog.access.client.config.ConfigClientImpl.getMTlsConfiguration(ConfigClientImpl.java:74)
+		at org.jfrog.access.client.AccessClientContext$1.lambda$reload$0(AccessClientContext.java:423)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:125)
+		at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:69)
+		... 4 more
+	Caused by: java.net.SocketTimeoutException: Read timed out
+		at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+		at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+		at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+		at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+		at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+		at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+		at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+		at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+		at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+		at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+		at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+		at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+		at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+		at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+		at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+		at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+		at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+		at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+		at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+		at org.jfrog.client.http.CloseableHttpClientDecorator.doExecute(CloseableHttpClientDecorator.java:109)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+		at org.jfrog.access.client.http.AccessHttpClient.restCall(AccessHttpClient.java:140)
+		... 11 more
+27-Feb-2023 14:39:27.678 WARNING [jf-common-pool-38] com.google.common.cache.LocalCache$Segment$1.run Exception thrown during refresh
+	java.util.concurrent.ExecutionException: org.jfrog.access.client.AccessClientException: Unable to connect to Access server: Read timed out
+		at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566)
+		at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:527)
+		at com.google.common.util.concurrent.FluentFuture$TrustedFuture.get(FluentFuture.java:88)
+		at com.google.common.util.concurrent.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:240)
+		at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2313)
+		at com.google.common.cache.LocalCache$Segment$1.run(LocalCache.java:2293)
+		at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+		at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1213)
+		at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:983)
+		at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:771)
+		at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:100)
+		at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+		at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1213)
+		at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:983)
+		at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:771)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.afterRanInterruptibly(TrustedListenableFutureTask.java:133)
+		at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:133)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:78)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: org.jfrog.access.client.AccessClientException: Unable to connect to Access server: Read timed out
+		at org.jfrog.access.client.http.AccessHttpClient.restCall(AccessHttpClient.java:156)
+		at org.jfrog.access.client.AccessClientBaseImpl.makeRequestAndParseResponse(AccessClientBaseImpl.java:175)
+		at org.jfrog.access.client.AccessClientBaseImpl.findAll(AccessClientBaseImpl.java:122)
+		at org.jfrog.access.client.AccessClientBaseImpl.findAll(AccessClientBaseImpl.java:111)
+		at org.jfrog.access.client.config.ConfigClientImpl.getMTlsConfiguration(ConfigClientImpl.java:74)
+		at org.jfrog.access.client.AccessClientContext$1.lambda$reload$0(AccessClientContext.java:423)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:125)
+		at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:69)
+		... 4 more
+	Caused by: java.net.SocketTimeoutException: Read timed out
+		at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+		at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+		at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+		at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+		at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+		at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+		at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+		at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+		at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+		at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+		at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+		at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+		at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+		at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+		at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+		at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+		at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+		at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+		at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+		at org.jfrog.client.http.CloseableHttpClientDecorator.doExecute(CloseableHttpClientDecorator.java:109)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+		at org.jfrog.access.client.http.AccessHttpClient.restCall(AccessHttpClient.java:140)
+		... 11 more
+27-Feb-2023 14:44:15.215 WARNING [jf-common-pool-39] com.google.common.cache.LocalCache$Segment$1.run Exception thrown during refresh
+	java.util.concurrent.ExecutionException: org.jfrog.access.client.AccessClientException: Unable to connect to Access server: Read timed out
+		at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566)
+		at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:527)
+		at com.google.common.util.concurrent.FluentFuture$TrustedFuture.get(FluentFuture.java:88)
+		at com.google.common.util.concurrent.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:240)
+		at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2313)
+		at com.google.common.cache.LocalCache$Segment$1.run(LocalCache.java:2293)
+		at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+		at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1213)
+		at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:983)
+		at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:771)
+		at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:100)
+		at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+		at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1213)
+		at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:983)
+		at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:771)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.afterRanInterruptibly(TrustedListenableFutureTask.java:133)
+		at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:133)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:78)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: org.jfrog.access.client.AccessClientException: Unable to connect to Access server: Read timed out
+		at org.jfrog.access.client.http.AccessHttpClient.restCall(AccessHttpClient.java:156)
+		at org.jfrog.access.client.AccessClientBaseImpl.makeRequestAndParseResponse(AccessClientBaseImpl.java:175)
+		at org.jfrog.access.client.AccessClientBaseImpl.findAll(AccessClientBaseImpl.java:122)
+		at org.jfrog.access.client.AccessClientBaseImpl.findAll(AccessClientBaseImpl.java:111)
+		at org.jfrog.access.client.config.ConfigClientImpl.getMTlsConfiguration(ConfigClientImpl.java:74)
+		at org.jfrog.access.client.AccessClientContext$1.lambda$reload$0(AccessClientContext.java:423)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:125)
+		at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:69)
+		... 4 more
+	Caused by: java.net.SocketTimeoutException: Read timed out
+		at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+		at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+		at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+		at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+		at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+		at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+		at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+		at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+		at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+		at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+		at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+		at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+		at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+		at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+		at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+		at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+		at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+		at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+		at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+		at org.jfrog.client.http.CloseableHttpClientDecorator.doExecute(CloseableHttpClientDecorator.java:109)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+		at org.jfrog.access.client.http.AccessHttpClient.restCall(AccessHttpClient.java:140)
+		... 11 more
+27-Feb-2023 14:46:06.672 WARNING [jf-common-pool-39] com.google.common.cache.LocalCache$Segment$1.run Exception thrown during refresh
+	java.util.concurrent.ExecutionException: org.jfrog.access.client.AccessClientException: Unable to connect to Access server: Read timed out
+		at com.google.common.util.concurrent.AbstractFuture.getDoneValue(AbstractFuture.java:566)
+		at com.google.common.util.concurrent.AbstractFuture.get(AbstractFuture.java:527)
+		at com.google.common.util.concurrent.FluentFuture$TrustedFuture.get(FluentFuture.java:88)
+		at com.google.common.util.concurrent.Uninterruptibles.getUninterruptibly(Uninterruptibles.java:240)
+		at com.google.common.cache.LocalCache$Segment.getAndRecordStats(LocalCache.java:2313)
+		at com.google.common.cache.LocalCache$Segment$1.run(LocalCache.java:2293)
+		at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+		at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1213)
+		at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:983)
+		at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:771)
+		at com.google.common.util.concurrent.AbstractTransformFuture.run(AbstractTransformFuture.java:100)
+		at com.google.common.util.concurrent.DirectExecutor.execute(DirectExecutor.java:30)
+		at com.google.common.util.concurrent.AbstractFuture.executeListener(AbstractFuture.java:1213)
+		at com.google.common.util.concurrent.AbstractFuture.complete(AbstractFuture.java:983)
+		at com.google.common.util.concurrent.AbstractFuture.setException(AbstractFuture.java:771)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.afterRanInterruptibly(TrustedListenableFutureTask.java:133)
+		at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:133)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask.run(TrustedListenableFutureTask.java:78)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+	Caused by: org.jfrog.access.client.AccessClientException: Unable to connect to Access server: Read timed out
+		at org.jfrog.access.client.http.AccessHttpClient.restCall(AccessHttpClient.java:156)
+		at org.jfrog.access.client.AccessClientBaseImpl.makeRequestAndParseResponse(AccessClientBaseImpl.java:175)
+		at org.jfrog.access.client.AccessClientBaseImpl.findAll(AccessClientBaseImpl.java:122)
+		at org.jfrog.access.client.AccessClientBaseImpl.findAll(AccessClientBaseImpl.java:111)
+		at org.jfrog.access.client.config.ConfigClientImpl.getMTlsConfiguration(ConfigClientImpl.java:74)
+		at org.jfrog.access.client.AccessClientContext$1.lambda$reload$0(AccessClientContext.java:423)
+		at com.google.common.util.concurrent.TrustedListenableFutureTask$TrustedFutureInterruptibleTask.runInterruptibly(TrustedListenableFutureTask.java:125)
+		at com.google.common.util.concurrent.InterruptibleTask.run(InterruptibleTask.java:69)
+		... 4 more
+	Caused by: java.net.SocketTimeoutException: Read timed out
+		at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+		at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+		at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+		at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+		at java.base/java.net.Socket$SocketInputStream.read(Socket.java:966)
+		at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+		at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+		at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+		at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+		at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+		at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+		at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+		at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+		at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+		at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+		at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+		at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+		at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+		at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+		at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+		at org.jfrog.client.http.CloseableHttpClientDecorator.doExecute(CloseableHttpClientDecorator.java:109)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+		at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+		at org.jfrog.access.client.http.AccessHttpClient.restCall(AccessHttpClient.java:140)
+		... 11 more
+27-Feb-2023 15:04:12.345 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+27-Feb-2023 15:04:12.401 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8091"]
+27-Feb-2023 15:04:12.403 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+27-Feb-2023 15:04:12.425 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+27-Feb-2023 15:04:12.428 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.62-jfrog2]
+27-Feb-2023 15:04:12.454 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml]
+27-Feb-2023 15:04:12.460 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml]
+27-Feb-2023 15:04:12.480 WARNING [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+27-Feb-2023 15:04:12.481 WARNING [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/artifactory] in deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has been ignored
+27-Feb-2023 15:04:12.492 WARNING [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/access.war] inside the host appBase has been specified, and will be ignored
+27-Feb-2023 15:04:12.492 WARNING [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/artifactory.war] inside the host appBase has been specified, and will be ignored
+27-Feb-2023 15:04:19.280 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has finished in [6,815] ms
+27-Feb-2023 15:04:33.865 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml] has finished in [21,411] ms
+27-Feb-2023 15:04:33.866 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/ROOT]
+27-Feb-2023 15:04:33.886 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/ROOT] has finished in [19] ms
+27-Feb-2023 15:04:33.888 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+27-Feb-2023 15:04:33.905 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8091"]
+27-Feb-2023 15:04:33.911 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+27-Feb-2023 15:04:35.441 WARNING [http-nio-127.0.0.1-8040-exec-2] org.glassfish.jersey.internal.Errors.logErrors The following warnings have been detected: WARNING: The (sub)resource method editUserProfile in org.jfrog.access.server.rest.resource.ui.userprofile.UiUserProfileResource contains empty path annotation.
+
+27-Feb-2023 15:04:45.039 SEVERE [2023-02-27T15:04:42.438Z|f8566b30c7e594a0|art-exec-1] org.glassfish.jersey.server.spring.SpringComponentProvider.bind None or multiple beans found in Spring context for type class org.artifactory.rest.filter.LicenseRestFilter, skipping the type.
+27-Feb-2023 16:03:53.798 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+27-Feb-2023 16:03:53.800 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8081"]
+27-Feb-2023 16:03:53.802 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-8091"]
+27-Feb-2023 16:03:53.804 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+27-Feb-2023 16:03:53.805 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Feb-2023 16:03:56.201 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8081"]
+27-Feb-2023 16:03:56.204 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-8091"]
+27-Feb-2023 16:03:56.216 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-127.0.0.1-8040"]
+27-Feb-2023 16:03:56.226 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8081"]
+27-Feb-2023 16:03:56.228 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-8091"]
+27-Feb-2023 16:03:56.228 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-127.0.0.1-8040"]
+27-Feb-2023 16:07:24.472 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+27-Feb-2023 16:07:24.513 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8091"]
+27-Feb-2023 16:07:24.515 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+27-Feb-2023 16:07:24.526 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+27-Feb-2023 16:07:24.527 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.62-jfrog2]
+27-Feb-2023 16:07:24.548 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml]
+27-Feb-2023 16:07:24.548 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml]
+27-Feb-2023 16:07:24.577 WARNING [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/artifactory] in deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has been ignored
+27-Feb-2023 16:07:24.578 WARNING [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+27-Feb-2023 16:07:24.583 WARNING [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/artifactory.war] inside the host appBase has been specified, and will be ignored
+27-Feb-2023 16:07:24.583 WARNING [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/access.war] inside the host appBase has been specified, and will be ignored
+27-Feb-2023 16:07:32.698 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has finished in [8,145] ms
+27-Feb-2023 16:07:47.557 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml] has finished in [23,010] ms
+27-Feb-2023 16:07:47.559 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/ROOT]
+27-Feb-2023 16:07:47.585 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/ROOT] has finished in [25] ms
+27-Feb-2023 16:07:47.587 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+27-Feb-2023 16:07:47.604 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8091"]
+27-Feb-2023 16:07:47.609 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+27-Feb-2023 16:07:49.592 WARNING [http-nio-127.0.0.1-8040-exec-2] org.glassfish.jersey.internal.Errors.logErrors The following warnings have been detected: WARNING: The (sub)resource method editUserProfile in org.jfrog.access.server.rest.resource.ui.userprofile.UiUserProfileResource contains empty path annotation.
+
+27-Feb-2023 16:07:58.211 SEVERE [2023-02-27T16:07:55.543Z|14eec03e062daddc|art-exec-1] org.glassfish.jersey.server.spring.SpringComponentProvider.bind None or multiple beans found in Spring context for type class org.artifactory.rest.filter.LicenseRestFilter, skipping the type.

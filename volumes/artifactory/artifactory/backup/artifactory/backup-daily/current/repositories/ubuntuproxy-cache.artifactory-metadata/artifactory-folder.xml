@@ -1,0 +1,13 @@
+<artifactory-folder>
+    <repoPath>
+        <repoKey>ubuntuproxy-cache</repoKey>
+        <path></path>
+        <folder>true</folder>
+    </repoPath>
+    <name></name>
+    <created>1677061011232</created>
+    <lastModified>1677061011232</lastModified>
+    <additionalInfo>
+        <lastUpdated>1677061011232</lastUpdated>
+    </additionalInfo>
+</artifactory-folder>

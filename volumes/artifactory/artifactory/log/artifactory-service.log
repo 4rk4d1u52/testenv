@@ -1,0 +1,98 @@
+2023-03-08T07:28:24.471Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [scribe ccsslcnsclnt1] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-08T07:28:24.487Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:98] [default-executor-190] - Access License Client 1 - stream cancelled
+2023-03-08T07:28:24.535Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [ ccsspltfrmcnfgclnt1] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-08T07:28:24.536Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:98] [default-executor-190] - Access Platform Config Client 1 - stream cancelled
+2023-03-08T07:28:25.137Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [ ccsspltfrmcnfgclnt2] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-08T07:28:25.137Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:98] [default-executor-190] - Access Platform Config Client 2 - stream cancelled
+2023-03-08T07:28:25.385Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [ ccsspltfrmcnfgclnt3] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-08T07:28:25.386Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:98] [default-executor-190] - Access Platform Config Client 3 - stream cancelled
+2023-03-08T07:28:25.668Z [jfrt ] [INFO ] [                ] [ffectedConfigStreamObserver:40] [ ccsspltfrmcnfgclnt4] - publishing full invalidation and attempting to resubscribe to affected configuration changes
+2023-03-08T07:28:25.669Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:98] [default-executor-190] - Access Platform Config Client 4 - stream cancelled
+2023-03-08T07:28:26.027Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:98] [default-executor-190] - Access Projects Client 1 - stream cancelled
+2023-03-08T07:28:26.028Z [jfrt ] [INFO ] [                ] [ectedEntitiesStreamObserver:34] [ribe ccssprmssnclnt1] - publishing full invalidation and attempting to resubscribe to affected permissions changes
+2023-03-08T07:28:26.029Z [jfrt ] [INFO ] [                ] [.j.a.c.g.GrpcStreamObserver:98] [default-executor-190] - Access Permission Client 1 - stream cancelled
+2023-03-08T07:28:27.751Z [jfrt ] [INFO ] [cd7f03f613a8112 ] [.s.d.b.s.BinaryServiceImpl:753] [13a8112|art-exec-150] - Triggering Garbage Collection
+2023-03-08T07:28:27.752Z [jfrt ] [INFO ] [cd7f03f613a8112 ] [.s.d.b.s.g.GarbageCollector:66] [13a8112|art-exec-150] - Starting GC strategy 'TRASH_AND_BINARIES'
+2023-03-08T07:28:27.752Z [jfrt ] [INFO ] [545eafd14d72ef5 ] [tegrationCleanupServiceImpl:44] [4d72ef5|art-exec-158] - cleaning jobs table
+2023-03-08T07:28:27.753Z [jfrt ] [INFO ] [39f103d867fcaf37] [ualCacheCleanupServiceImpl:125] [7fcaf37|art-exec-140] - Starting cleanup of virtual repositories cache
+2023-03-08T07:28:27.753Z [jfrt ] [INFO ] [39f103d867fcaf37] [ualCacheCleanupServiceImpl:135] [7fcaf37|art-exec-140] - Completed virtual repositories cleanup: removed 0 cached files.
+2023-03-08T07:28:27.754Z [jfrt ] [INFO ] [cd7f03f613a8112 ] [.s.d.b.s.g.GarbageCollector:68] [13a8112|art-exec-150] - Finished GC Strategy 'TRASH_AND_BINARIES'
+2023-03-08T07:28:27.757Z [jfrt ] [INFO ] [545eafd14d72ef5 ] [tegrationCleanupServiceImpl:48] [4d72ef5|art-exec-158] - cleaned up 0 old job records
+2023-03-08T07:28:27.757Z [jfrt ] [INFO ] [90ffb7d3e7a3b6f0] [HeavyQueryCacheServiceImpl:132] [7a3b6f0|art-exec-152] - Cleanup deleted 0 expired entries from heavy query cache
+2023-03-08T07:28:27.775Z [jfrt ] [INFO ] [e7c59925559995f5] [ifactoryApplicationContext:773] [59995f5|art-exec-128] - Beginning full system export...
+2023-03-08T07:28:27.775Z [jfrt ] [INFO ] [e7c59925559995f5] [ifactoryApplicationContext:800] [59995f5|art-exec-128] - Creating temp export directory: /opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current
+2023-03-08T07:28:27.776Z [jfrt ] [INFO ] [e7c59925559995f5] [ifactoryApplicationContext:807] [59995f5|art-exec-128] - Using backup directory: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current'.
+2023-03-08T07:28:27.776Z [jfrt ] [INFO ] [e7c59925559995f5] [.CentralConfigServiceImpl:1040] [59995f5|art-exec-128] - Exporting config...
+2023-03-08T07:28:28.399Z [jfrt ] [INFO ] [e7c59925559995f5] [positoryConfigServiceImpl:1039] [59995f5|art-exec-128] - Exporting repositories config...
+2023-03-08T07:28:28.416Z [jfrt ] [INFO ] [e7c59925559995f5] [o.a.s.a.AccessServiceImpl:1537] [59995f5|art-exec-128] - Exporting serviceId to file
+2023-03-08T07:28:28.417Z [jfrt ] [INFO ] [e7c59925559995f5] [o.a.s.a.AccessServiceImpl:1519] [59995f5|art-exec-128] - Triggering export in access server...
+2023-03-08T07:28:28.823Z [jfrt ] [INFO ] [e7c59925559995f5] [factoryApplicationContext:1016] [59995f5|art-exec-128] - Note: the etc exported folder has excessive permissions. Be careful with the files.
+2023-03-08T07:28:28.824Z [jfrt ] [INFO ] [e7c59925559995f5] [a.s.u.SignedUrlServiceImpl:311] [59995f5|art-exec-128] - Exporting URL signing key...
+2023-03-08T07:28:28.825Z [jfrt ] [INFO ] [e7c59925559995f5] [r.s.RepositoryServiceImpl:1226] [59995f5|art-exec-128] - Exporting repositories...
+2023-03-08T07:28:28.828Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:80] [59995f5|art-exec-128] - example-repo-local export started with 1 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/example-repo-local'
+2023-03-08T07:28:28.834Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:90] [59995f5|art-exec-128] - example-repo-local export finished with: 1 Items exported (0 files and 1 folders), 0 Item skipped: (0 files and 0 folders).Duration: 6.43 millis IPS: 155.57 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/example-repo-local'
+2023-03-08T07:28:28.835Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:80] [59995f5|art-exec-128] - dockerrepo export started with 1 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/dockerrepo'
+2023-03-08T07:28:28.846Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:90] [59995f5|art-exec-128] - dockerrepo export finished with: 1 Items exported (0 files and 1 folders), 0 Item skipped: (0 files and 0 folders).Duration: 10.78 millis IPS: 92.73 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/dockerrepo'
+2023-03-08T07:28:28.847Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:80] [59995f5|art-exec-128] - libs-snapshot-local export started with 1 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/libs-snapshot-local'
+2023-03-08T07:28:28.853Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:90] [59995f5|art-exec-128] - libs-snapshot-local export finished with: 1 Items exported (0 files and 1 folders), 0 Item skipped: (0 files and 0 folders).Duration: 5.34 millis IPS: 187.42 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/libs-snapshot-local'
+2023-03-08T07:28:28.854Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:80] [59995f5|art-exec-128] - PythonRepo export started with 1 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/PythonRepo'
+2023-03-08T07:28:28.870Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:90] [59995f5|art-exec-128] - PythonRepo export finished with: 1 Items exported (0 files and 1 folders), 0 Item skipped: (0 files and 0 folders).Duration: 16.64 millis IPS: 60.11 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/PythonRepo'
+2023-03-08T07:28:28.871Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:80] [59995f5|art-exec-128] - artifactory-build-info export started with 1 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/artifactory-build-info'
+2023-03-08T07:28:28.884Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:90] [59995f5|art-exec-128] - artifactory-build-info export finished with: 1 Items exported (0 files and 1 folders), 0 Item skipped: (0 files and 0 folders).Duration: 13.09 millis IPS: 76.42 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/artifactory-build-info'
+2023-03-08T07:28:28.885Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:80] [59995f5|art-exec-128] - MavenRepo export started with 1 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/MavenRepo'
+2023-03-08T07:28:28.890Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:90] [59995f5|art-exec-128] - MavenRepo export finished with: 1 Items exported (0 files and 1 folders), 0 Item skipped: (0 files and 0 folders).Duration: 4.84 millis IPS: 206.58 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/MavenRepo'
+2023-03-08T07:28:28.891Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:80] [59995f5|art-exec-128] - libs-release-local export started with 8 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/libs-release-local'
+2023-03-08T07:28:28.925Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:90] [59995f5|art-exec-128] - libs-release-local export finished with: 8 Items exported (3 files and 5 folders), 0 Item skipped: (0 files and 0 folders).Duration: 33.94 millis IPS: 235.69 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/libs-release-local'
+2023-03-08T07:28:28.926Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:80] [59995f5|art-exec-128] - ubuntuproxy-cache export started with 1 nodes to: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/ubuntuproxy-cache'
+2023-03-08T07:28:28.931Z [jfrt ] [INFO ] [e7c59925559995f5] [a.r.d.i.DbRepoExportHandler:90] [59995f5|art-exec-128] - ubuntuproxy-cache export finished with: 1 Items exported (0 files and 1 folders), 0 Item skipped: (0 files and 0 folders).Duration: 5.93 millis IPS: 168.76 Target: '/opt/jfrog/artifactory/var/backup/artifactory/backup-daily/current/repositories/ubuntuproxy-cache'
+2023-03-08T07:28:28.933Z [jfrt ] [INFO ] [e7c59925559995f5] [ifactoryApplicationContext:918] [59995f5|art-exec-128] - Full system export completed successfully.
+2023-03-08T07:28:48.197Z [jfrt ] [ERROR] [27d3c868887c8798] [o.a.m.s.CallHomeService:134   ] [87c8798|art-exec-159] - Failed calling home: api.bintray.com: Name or service not known
+java.net.UnknownHostException: api.bintray.com: Name or service not known
+	at java.base/java.net.Inet4AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:933)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1529)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:852)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1519)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1377)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1305)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:112)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.jfrog.client.http.CloseableHttpClientDecorator.doExecute(CloseableHttpClientDecorator.java:109)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at org.artifactory.metrics.services.CallHomeService.callHome(CallHomeService.java:129)
+	at org.artifactory.metrics.services.CallHomeService$$FastClassBySpringCGLIB$$1d14b447.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.artifactory.schedule.aop.TraceableMethodInvocation.proceed(TraceableMethodInvocation.java:72)
+	at org.artifactory.schedule.aop.AsyncAdvice.doInvoke(AsyncAdvice.java:300)
+	at org.artifactory.schedule.aop.AsyncAdvice.lambda$executeAsync$2(AsyncAdvice.java:246)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.artifactory.opentracing.TraceableRunnableDecorator.run(TraceableRunnableDecorator.java:44)
+	at org.artifactory.concurrent.ArtifactoryRunnable.run(ArtifactoryRunnable.java:53)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-03-08T08:00:00.010Z [jfrt ] [INFO ] [44f02f606646b33b] [.s.d.b.s.BinaryServiceImpl:753] [646b33b|art-exec-143] - Triggering Garbage Collection
+2023-03-08T08:00:00.010Z [jfrt ] [INFO ] [44f02f606646b33b] [.s.d.b.s.g.GarbageCollector:66] [646b33b|art-exec-143] - Starting GC strategy 'TRASH_AND_BINARIES'
+2023-03-08T08:00:00.011Z [jfrt ] [INFO ] [44f02f606646b33b] [.s.d.b.s.g.GarbageCollector:68] [646b33b|art-exec-143] - Finished GC Strategy 'TRASH_AND_BINARIES'
+2023-03-08T08:21:47.876Z [jfrt ] [INFO ] [3647964d60cc124 ] [aseBundleCleanupServiceImpl:84] [60cc124|art-exec-159] - Starting to cleanup incomplete Release Bundles
+2023-03-08T08:21:47.878Z [jfrt ] [INFO ] [3647964d60cc124 ] [b.ReleaseBundleServiceImpl:475] [60cc124|art-exec-159] - Finished deleting orphan/unidentified items from _intransit repository
+2023-03-08T08:21:47.878Z [jfrt ] [INFO ] [3647964d60cc124 ] [aseBundleCleanupServiceImpl:90] [60cc124|art-exec-159] - Finished incomplete Release Bundles cleanup
+2023-03-08T09:21:47.876Z [jfrt ] [INFO ] [c4c56a314313d277] [aseBundleCleanupServiceImpl:84] [313d277|art-exec-143] - Starting to cleanup incomplete Release Bundles
+2023-03-08T09:21:47.887Z [jfrt ] [INFO ] [c4c56a314313d277] [b.ReleaseBundleServiceImpl:475] [313d277|art-exec-143] - Finished deleting orphan/unidentified items from _intransit repository
+2023-03-08T09:21:47.887Z [jfrt ] [INFO ] [c4c56a314313d277] [aseBundleCleanupServiceImpl:90] [313d277|art-exec-143] - Finished incomplete Release Bundles cleanup
+2023-03-08T09:21:49.783Z [jfrt ] [INFO ] [d30266c7b7bbbbe ] [adsFolderCleanupServiceImpl:52] [b7bbbbe|art-exec-138] - Starting docker temp folder cleanup
+2023-03-08T09:21:49.785Z [jfrt ] [INFO ] [d30266c7b7bbbbe ] [adsFolderCleanupServiceImpl:54] [b7bbbbe|art-exec-138] - Docker temp folder cleanup finished, time took: 2 millis
+2023-03-08T10:21:47.876Z [jfrt ] [INFO ] [c3e54362dd87f07a] [aseBundleCleanupServiceImpl:84] [d87f07a|art-exec-154] - Starting to cleanup incomplete Release Bundles
+2023-03-08T10:21:47.877Z [jfrt ] [INFO ] [c3e54362dd87f07a] [b.ReleaseBundleServiceImpl:475] [d87f07a|art-exec-154] - Finished deleting orphan/unidentified items from _intransit repository
+2023-03-08T10:21:47.877Z [jfrt ] [INFO ] [c3e54362dd87f07a] [aseBundleCleanupServiceImpl:90] [d87f07a|art-exec-154] - Finished incomplete Release Bundles cleanup

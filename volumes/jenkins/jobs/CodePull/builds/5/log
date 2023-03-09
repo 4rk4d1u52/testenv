@@ -1,0 +1,78 @@
+Started by user [8mha:////4FuKQpR+Hx+hFMBRosHVjRR3/PPmO0vqcenFgFjgFLuxAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgZu/dLi1CL9gsS8lEQA7ptgJcAAAAA=[0mArkadiusz
+Running as SYSTEM
+Building remotely on [8mha:////4CpIPyJZXlyXs9OYmI60c+kLlHQJUqdh+GM390kI6u5lAAAAmx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZ+/eT83ILSktQi/eCcxLJUAE32xgfEAAAA[0mSlave (dockerslave) in workspace /home/workspace/CodePull
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/workspace/CodePull/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/4rk4d1u52/panda_application.git # timeout=10
+Fetching upstream changes from https://github.com/4rk4d1u52/panda_application.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+ > git fetch --tags --progress -- https://github.com/4rk4d1u52/panda_application.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/selenium_grid^{commit} # timeout=10
+Checking out Revision 796b94fc38a14a18b81f99c7cef9638e7f7af6c7 (refs/remotes/origin/selenium_grid)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 796b94fc38a14a18b81f99c7cef9638e7f7af6c7 # timeout=10
+Commit message: "modify PandaApplicationSeleniumTest.java and others in this location"
+ > git rev-list --no-walk 796b94fc38a14a18b81f99c7cef9638e7f7af6c7 # timeout=10
+[CodePull] $ /home/tools/hudson.tasks.Maven_MavenInstallation/m3/bin/mvn clean install
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------------------------< pl.pandait:panda >--------------------------
+[INFO] Building panda 0.0.1
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.1.0:clean (default-clean) @ panda ---
+[INFO] Deleting /home/workspace/CodePull/target
+[INFO] 
+[INFO] --- resources:3.1.0:resources (default-resources) @ panda ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ panda ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default) @ panda ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- resources:3.1.0:testResources (default-testResources) @ panda ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/workspace/CodePull/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ panda ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to /home/workspace/CodePull/target/test-classes
+[INFO] -------------------------------------------------------------
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/test/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[21,28] cannot find symbol
+  symbol: class PandaApplication
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/test/java/pl/pandait/panda/HelloControllerTest.java:[18,44] cannot find symbol
+  symbol:   class HelloController
+  location: class pl.pandait.panda.HelloControllerTest
+[INFO] 2 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.838 s
+[INFO] Finished at: 2023-02-27T16:22:10Z
+[INFO] ------------------------------------------------------------------------
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:testCompile (default-testCompile) on project panda: Compilation failure: Compilation failure: 
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/test/java/pl/pandait/panda/PandaApplicationSeleniumTest.java:[21,28] cannot find symbol
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   symbol: class PandaApplication
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] /home/workspace/CodePull/src/test/java/pl/pandait/panda/HelloControllerTest.java:[18,44] cannot find symbol
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   symbol:   class HelloController
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR]   location: class pl.pandait.panda.HelloControllerTest
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] -> [Help 1]
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] 
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[8mha:////4Ku+8Jf7k0jRYOmIY1bgdWS9a+Up2KF4kKE7cykNeZgQAAAAYB+LCAAAAAAAAP9b85aBtbiIQSmjNKU4P0+vJLE4u1gvPjexLDVPzxdEuhYV5Rf55Zek1m9pfpLfVWLNxMBQUcQgBdWQnJ9XnJ+TqucMoUEKGSCAEaSwAABqVhoSYAAAAA==[0m[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE

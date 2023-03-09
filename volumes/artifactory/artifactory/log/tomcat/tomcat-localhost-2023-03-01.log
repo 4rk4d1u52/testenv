@@ -1,0 +1,9 @@
+01-Mar-2023 10:03:22.698 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+01-Mar-2023 10:03:31.305 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+01-Mar-2023 10:54:55.560 INFO [http-nio-127.0.0.1-8040-exec-6] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcherServlet'
+01-Mar-2023 11:37:50.880 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+01-Mar-2023 11:37:59.458 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+01-Mar-2023 11:42:16.837 INFO [http-nio-127.0.0.1-8040-exec-5] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcherServlet'
+01-Mar-2023 13:06:20.939 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log 1 Spring WebApplicationInitializers detected on classpath
+01-Mar-2023 13:06:29.612 INFO [Catalina-utility-1] org.apache.catalina.core.ApplicationContext.log Initializing Spring embedded WebApplicationContext
+01-Mar-2023 13:32:02.762 INFO [http-nio-127.0.0.1-8040-exec-8] org.apache.catalina.core.ApplicationContext.log Initializing Spring DispatcherServlet 'dispatcherServlet'

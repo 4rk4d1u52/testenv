@@ -1,0 +1,6 @@
+2023-03-08T08:36:22.032Z [jfac ] [INFO ] [b703549ea9755e65] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task3     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 0f1bc8ee4020
+2023-03-08T08:56:37.009Z [jfac ] [INFO ] [d0c339d35e961e24] [j.a.s.s.t.TokenServiceImpl:199] [jf-access-task8     ] - Revoked 2 expired tokens.
+2023-03-08T09:36:22.047Z [jfac ] [INFO ] [538c034f3d228cf3] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task8     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 0f1bc8ee4020
+2023-03-08T09:56:37.011Z [jfac ] [INFO ] [fb5bc522a1a3066b] [j.a.s.s.t.TokenServiceImpl:199] [jf-access-task5     ] - Revoked 7 expired tokens.
+2023-03-08T10:36:22.049Z [jfac ] [INFO ] [93569d9f41543f7c] [.s.s.r.StaleTokenCleanupJob:62] [jf-access-task6     ] - Starting Access job to remove stale nodes and join-admin-tokens on server: 0f1bc8ee4020
+2023-03-08T10:56:37.009Z [jfac ] [INFO ] [afa389e2b2b02fa0] [j.a.s.s.t.TokenServiceImpl:199] [jf-access-task7     ] - Revoked 2 expired tokens.

@@ -1,0 +1,368 @@
+{
+  "version" : "15",
+  "tokens" : [ {
+    "id" : "4c2d4b87-ab65-4ccd-8b22-3c5880a7b364",
+    "subject" : "jfrt@01gsthmwbbqmed0tj72bw005ed/users/admin",
+    "owner" : "jfrt@01gsthmwbbqmed0tj72bw005ed",
+    "created" : 1677002508662,
+    "scope" : "HASHED:71c849248a9e5a4828966c5d8893fb36e2cd625c8667a0f62575b11e0d1d4cb8",
+    "type" : "generic",
+    "username" : "admin",
+    "description" : "",
+    "payload" : {
+      "kid" : "DPVhBNW07MWgQyPo86Vb-uFh41vHlafPJTK2HGHlXQk",
+      "tokenId" : "4c2d4b87-ab65-4ccd-8b22-3c5880a7b364",
+      "subject" : "jfrt@01gsthmwbbqmed0tj72bw005ed/users/admin",
+      "scope" : "authentication:remember-me",
+      "audience" : "jfrt@01gsthmwbbqmed0tj72bw005ed",
+      "extension" : "{\"realm\":\"internal\",\"expiry\":1678212108657}",
+      "version" : "2",
+      "expiry" : 2419200,
+      "issuer" : "jfrt@01gsthmwbbqmed0tj72bw005ed",
+      "issuedAt" : 1677002508662
+    },
+    "hashedReference" : null,
+    "expiry" : 1679421708662,
+    "refreshToken" : null,
+    "persistent" : true
+  } ],
+  "users" : [ {
+    "username" : "admin",
+    "firstName" : null,
+    "lastName" : null,
+    "email" : "qjgjxgotucvvobmshb@bbitf.com",
+    "realm" : "internal",
+    "status" : "enabled",
+    "lastLoginTime" : 1677526478576,
+    "lastLoginIp" : "192.168.44.1",
+    "password" : "argon$$argon2id$v=19$m=512,t=16,p=1$kSFviDM0bahQGubuhye0ng$NqupO5KV7RFOmaxlut1joTcXpniW4ySYwSC4y7mW1Aw",
+    "allowedIps" : [ "*" ],
+    "created" : 1677001889734,
+    "modified" : 1677002494380,
+    "failedLoginAttempts" : 0,
+    "statusLastModified" : 1677001889734,
+    "passwordLastModified" : 1677002494375,
+    "customData" : {
+      "disabled_password" : {
+        "value" : "false",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "policy_viewer" : {
+        "value" : "false",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "updatable_profile" : {
+        "value" : "true",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "watch_manager" : {
+        "value" : "false",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "blockUiView" : {
+        "value" : "false",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "reports_manager" : {
+        "value" : "false",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "artifactory_admin" : {
+        "value" : "true",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "userCustomData" : {
+        "value" : "{\"onboardingSteps\":{\"artifactory\":{\"index\":1,\"isDone\":false,\"children\":[{\"id\":\"create_repositories\",\"isDone\":false},{\"id\":\"create_users\",\"isDone\":false},{\"id\":\"create_groups\",\"isDone\":false},{\"id\":\"set_permissions\",\"isDone\":false},{\"id\":\"deploy_artifacts\",\"isDone\":false}]}},\"userSkippedOnboarding\":false,\"wizardIsClosed\":false,\"createdPrevRepo\":false,\"userDismissedDeployBubble\":false,\"userSeenGuide\":false,\"userSeenGettingStarted\":false,\"projectsGettingStartedProgress\":{\"isNewNotificationVisible\":false,\"isNotificationBubbleActive\":false,\"shouldShowAnimationBubble\":false,\"isAnimationBubbleActive\":false,\"shouldShowSpecialTile\":true,\"shouldShowWhatsNextBubble\":true,\"isWhatsNextBubbleActive\":false},\"showPersonalization\":null}",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "policy_manager" : {
+        "value" : "false",
+        "sensitive" : false,
+        "clusterLocal" : false
+      }
+    },
+    "groups" : [ ]
+  }, {
+    "username" : "anonymous",
+    "firstName" : null,
+    "lastName" : null,
+    "email" : null,
+    "realm" : "internal",
+    "status" : "enabled",
+    "lastLoginTime" : 0,
+    "lastLoginIp" : null,
+    "password" : null,
+    "allowedIps" : [ "*" ],
+    "created" : 1677001890129,
+    "modified" : 1677001890129,
+    "failedLoginAttempts" : 0,
+    "statusLastModified" : 1677001890129,
+    "passwordLastModified" : 0,
+    "customData" : {
+      "disabled_password" : {
+        "value" : "true",
+        "sensitive" : false,
+        "clusterLocal" : false
+      }
+    },
+    "groups" : [ ]
+  }, {
+    "username" : "maven",
+    "firstName" : null,
+    "lastName" : null,
+    "email" : "blabla@gmail.com",
+    "realm" : "internal",
+    "status" : "enabled",
+    "lastLoginTime" : 1677063124715,
+    "lastLoginIp" : "192.168.44.1",
+    "password" : "argon$$argon2id$v=19$m=512,t=16,p=1$SR1qZoO7GzmeRLt1UdicVg$KCw806wTA3wgonRkniRjz6wUDp2pr8Pfct+PL6LHQvo",
+    "allowedIps" : [ "*" ],
+    "created" : 1677061615559,
+    "modified" : 1677062532584,
+    "failedLoginAttempts" : 0,
+    "statusLastModified" : 1677061615559,
+    "passwordLastModified" : 1677061615559,
+    "customData" : {
+      "disabled_password" : {
+        "value" : "false",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "policy_viewer" : {
+        "value" : "false",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "updatable_profile" : {
+        "value" : "true",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "watch_manager" : {
+        "value" : "false",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "blockUiView" : {
+        "value" : "false",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "reports_manager" : {
+        "value" : "false",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "artifactory_admin" : {
+        "value" : "false",
+        "sensitive" : false,
+        "clusterLocal" : false
+      },
+      "policy_manager" : {
+        "value" : "false",
+        "sensitive" : false,
+        "clusterLocal" : false
+      }
+    },
+    "groups" : [ {
+      "name" : "MavenOnlyGroup",
+      "realm" : "internal"
+    }, {
+      "name" : "sxdgsdfgsd",
+      "realm" : "internal"
+    } ]
+  } ],
+  "federation_servers" : [ ],
+  "groups" : [ {
+    "name" : "readers",
+    "description" : "A group for read-only users",
+    "autoJoin" : true,
+    "realm" : "internal",
+    "realmAttributes" : null,
+    "created" : 1677001890071,
+    "modified" : 1677001890071,
+    "customData" : { },
+    "externalId" : null
+  }, {
+    "name" : "MavenOnlyGroup",
+    "description" : null,
+    "autoJoin" : false,
+    "realm" : "internal",
+    "realmAttributes" : null,
+    "created" : 1677061394718,
+    "modified" : 1677061394718,
+    "customData" : { },
+    "externalId" : null
+  }, {
+    "name" : "sxdgsdfgsd",
+    "description" : null,
+    "autoJoin" : false,
+    "realm" : "internal",
+    "realmAttributes" : null,
+    "created" : 1677062532576,
+    "modified" : 1677062532584,
+    "customData" : { },
+    "externalId" : null
+  } ],
+  "federation_events" : [ ],
+  "permissions" : [ {
+    "name" : "jfac@01gsthm3dxven60ez9sygz1r46:3b408527-18cc-4b90-9b2a-a4f4eb6c4272",
+    "displayName" : "Anything",
+    "resourceType" : "repo",
+    "serviceId" : "jfac@01gsthm3dxven60ez9sygz1r46",
+    "created" : 1677001890203,
+    "modified" : 1677001890203,
+    "customData" : "{\"repoKeys\":[\"ANY\"],\"includePattern\":\"**\",\"excludePattern\":\"\",\"updatedBy\":\"_system_\"}",
+    "actions" : [ {
+      "action" : "r",
+      "principal" : "readers",
+      "principalType" : "GROUP",
+      "id" : "readers(GROUP):READ"
+    }, {
+      "action" : "r",
+      "principal" : "anonymous",
+      "principalType" : "USER",
+      "id" : "anonymous(USER):READ"
+    } ]
+  }, {
+    "name" : "jfac@01gsthm3dxven60ez9sygz1r46:15e95a81-4f7d-4c58-90ea-370ec3b67fe1",
+    "displayName" : "Anything",
+    "resourceType" : "build",
+    "serviceId" : "jfac@01gsthm3dxven60ez9sygz1r46",
+    "created" : 1677001890343,
+    "modified" : 1677001890343,
+    "customData" : "{\"repoKeys\":[\"artifactory-build-info\"],\"includePattern\":\"**\",\"excludePattern\":\"\",\"updatedBy\":\"_system_\"}",
+    "actions" : [ {
+      "action" : "r",
+      "principal" : "readers",
+      "principalType" : "GROUP",
+      "id" : "readers(GROUP):READ"
+    }, {
+      "action" : "r",
+      "principal" : "anonymous",
+      "principalType" : "USER",
+      "id" : "anonymous(USER):READ"
+    } ]
+  }, {
+    "name" : "jfac@01gsthm3dxven60ez9sygz1r46:da8daf22-447e-4f95-a41f-418c8b7791ef",
+    "displayName" : "Any Remote",
+    "resourceType" : "repo",
+    "serviceId" : "jfac@01gsthm3dxven60ez9sygz1r46",
+    "created" : 1677001890358,
+    "modified" : 1677001890358,
+    "customData" : "{\"repoKeys\":[\"ANY REMOTE\"],\"includePattern\":\"**\",\"excludePattern\":\"\",\"updatedBy\":\"_system_\"}",
+    "actions" : [ {
+      "action" : "w",
+      "principal" : "anonymous",
+      "principalType" : "USER",
+      "id" : "anonymous(USER):DEPLOY"
+    }, {
+      "action" : "r",
+      "principal" : "anonymous",
+      "principalType" : "USER",
+      "id" : "anonymous(USER):READ"
+    } ]
+  }, {
+    "name" : "jfac@01gsthm3dxven60ez9sygz1r46:48fb283c-5746-485f-973d-59b5a7177b73",
+    "displayName" : "MavenOnlyPerm",
+    "resourceType" : "repo",
+    "serviceId" : "jfac@01gsthm3dxven60ez9sygz1r46",
+    "created" : 1677061448738,
+    "modified" : 1677061674693,
+    "customData" : "{\"includePattern\":\"**\",\"excludePattern\":\"\",\"repoKeys\":[\"libs-snapshot-local\",\"libs-release-local\"]}",
+    "actions" : [ {
+      "action" : "r",
+      "principal" : "MavenOnlyGroup",
+      "principalType" : "GROUP",
+      "id" : "MavenOnlyGroup(GROUP):READ"
+    } ]
+  } ],
+  "platform_configurations" : [ {
+    "config_key" : "roles.v2.global.configuration",
+    "config" : "{\"roles\":[{\"name\":\"Developer\",\"description\":\"Developer Role\",\"type\":\"PREDEFINED\",\"environmentActions\":[{\"name\":\"DEV\",\"mask\":1014511}],\"mask\":0},{\"name\":\"Contributor\",\"description\":\"Contributor Role\",\"type\":\"PREDEFINED\",\"environmentActions\":[{\"name\":\"DEV\",\"mask\":866535}],\"mask\":0},{\"name\":\"Viewer\",\"description\":\"Viewer Role\",\"type\":\"PREDEFINED\",\"environmentActions\":[{\"name\":\"DEV\",\"mask\":854049}],\"mask\":0},{\"name\":\"Release Manager\",\"description\":\"Release Manager Role\",\"type\":\"PREDEFINED\",\"environmentActions\":[{\"name\":\"DEV\",\"mask\":594542848}],\"mask\":0},{\"name\":\"Security Manager\",\"description\":\"Security Manager Role\",\"type\":\"PREDEFINED\",\"environmentActions\":[{\"name\":\"DEV\",\"mask\":5352819761},{\"name\":\"PROD\",\"mask\":5352819761}],\"mask\":0},{\"name\":\"Project Admin\",\"description\":\"Project Admin Role\",\"type\":\"ADMIN\",\"environmentActions\":[{\"name\":\"DEV\",\"mask\":5360320511},{\"name\":\"PROD\",\"mask\":5360320511}],\"mask\":0}]}",
+    "secret" : false,
+    "revision" : 1
+  }, {
+    "config_key" : "projects.default.configuration",
+    "config" : "{\"name\":\"default\",\"description\":\"Virtual project with all resources\",\"roles\":{\"Release Manager\":{\"name\":\"Release Manager\",\"description\":\"Release Manager Role\",\"type\":\"PREDEFINED\",\"environmentActions\":[{\"name\":\"DEV\",\"mask\":594542848}],\"mask\":0},\"Developer\":{\"name\":\"Developer\",\"description\":\"Developer Role\",\"type\":\"PREDEFINED\",\"environmentActions\":[{\"name\":\"DEV\",\"mask\":1014511}],\"mask\":0},\"Contributor\":{\"name\":\"Contributor\",\"description\":\"Contributor Role\",\"type\":\"PREDEFINED\",\"environmentActions\":[{\"name\":\"DEV\",\"mask\":866535}],\"mask\":0},\"Viewer\":{\"name\":\"Viewer\",\"description\":\"Viewer Role\",\"type\":\"PREDEFINED\",\"environmentActions\":[{\"name\":\"DEV\",\"mask\":854049}],\"mask\":0},\"Project Admin\":{\"name\":\"Project Admin\",\"description\":\"Project Admin Role\",\"type\":\"ADMIN\",\"environmentActions\":[{\"name\":\"DEV\",\"mask\":5360320511},{\"name\":\"PROD\",\"mask\":5360320511}],\"mask\":3229614080},\"Security Manager\":{\"name\":\"Security Manager\",\"description\":\"Security Manager Role\",\"type\":\"PREDEFINED\",\"environmentActions\":[{\"name\":\"DEV\",\"mask\":5352819761},{\"name\":\"PROD\",\"mask\":5352819761}],\"mask\":0}},\"users\":{\"admin\":{\"roles\":[\"Project Admin\"]},\"maven\":{\"roles\":[\"Viewer\"]}},\"groups\":{\"MavenOnlyGroup\":{\"roles\":[\"Viewer\"]},\"sxdgsdfgsd\":{\"roles\":[\"Viewer\"]}},\"resources\":{},\"environments\":{\"PROD\":{\"id\":\"PROD\",\"name\":\"PROD\"},\"DEV\":{\"id\":\"DEV\",\"name\":\"DEV\"}},\"projectAdminCanManageMembers\":true,\"projectAdminCanManageResources\":true,\"projectAdminCanIndexResources\":true,\"projectKey\":\"default\"}",
+    "secret" : false,
+    "revision" : 6
+  }, {
+    "config_key" : "adoption.config",
+    "config" : "{\"disabled\":false}",
+    "secret" : false,
+    "revision" : 11
+  }, {
+    "config_key" : "jfconnect.usage.config",
+    "config" : "{\"next_usage_timestamp_millis\":1678137496149,\"usage_failed_files\":{},\"next_artifactory_cleanup_timestamp_millis\":1678180957956,\"max_zip_size_bytes\":52428800}",
+    "secret" : false,
+    "revision" : 13
+  }, {
+    "config_key" : "jfconnect.entitlements.register",
+    "config" : "{\"registration_token\":\"JE217gLSF2dPyhq4hJpbWDzzuxzUuVjK477dejFf4xLRpiJNXJQja8z165pPrredBAh6hSz6mUmGf2D7vwSx3NXeFwqi3NSsc83af2icye1toTj8RBsKkavBh5rNuEyaApMATBHk6PkeT2qvgd4ApYSmnnPav6H3yWnexAqMy82kxUHqLx9mijcRHoLvyBNb1155QPKaJpfmv76qKgPzw6o7i5zhjeAVp36BnHD3k4Ty2M4QydwKy1NJNCo9dx6zRDYbPQMrqftbaDzN6DgssM5ZxzEZY7v3KZK7M9psGZLSGsUbc4XBLwaZtcECPXLBafMVpgwHtL1Hz2vBVaoYz5SiXqjwpowHjPrjiCrKZYFSbQXz2fceV1nUpdsaNqQd8pUkUBkE2YrzP8VidwCwCMDKwJaTMECTNdQidnKNiyJjZQesBxcsnLQxcPETHaeZG6gFjZG61PfnyStAjF2wPUioDiy2vb5pfkKw3hPdrCnryLgsfDccEZ7YotXruQMEQXoxXSb8QcLW8XKmDGuurmwpkfXJ45GM6DCFf8bdXbCPeCVhnr7bmMdaEt2j1L2eGzTseMjeGKt7LSyubuFtq7tAgfdHcQjEwS4Nv21EmAcgVFJaQziyHpqUhUy3N4Ue4dBapKkWYe8bkwc3udLht2ku9qfvYFjyBnHoseoNuLriDCc3EvBgQZnv7BywunzvNmE83xQNUx9x2J1arKLGMYzW8fTHcEBqqtxjuiUaiuRtZ7iYPdJa7aTD9Buez5dmaTJEqzfJ1uZS4JA7qRLKqhvSLpzEV4c1DjCJKAVMUJXmSKemJHoZWtQWESDhQKP3oWxC8eGmZCMGZFus4mYYhfe1gLLhG4p3k3c4H5SMrg4MiWiBcNRufZqFiPmb6oKBHdv4oNDazKu4zN6XsLpTLoWAaAguHcEwbWU6szSRobmhgzmLU3ZocSVRJQMKcjPxxfeHjzTQ5mGuedaBF9knjDRUDg9W93SFbG7akouijbzEtQPeFtVgYmMu9LXuaivmvY6ECSvPhQeFY2memYx7UZbfbGY7nCyYr4Z2G2BRDoop2Hjir6ym2QN1a3fRhK6eWv6oZENjbBJSdVTXBrYzWo3TYmHLh5ip4qYUstTZo871Qd8KQAjjJFcXxBDkBHv74UNofQYCMx24grbQjZ9iVtmaGy6TdDcmmp93DVHW7TQPBwzXYJHE4N7zUFAZdMETyFZ9t8FDntM1TixTd41wPeWSoSMjaBhj5f5T9ZWWD1Dngt3imgGzR4LNEXTVTsiUK9Jp9TpcK573Kq484iBYqes1Qn1qca8rVBkZKnpiDQkB8bZnYijyqsbADj2M9nqVGykcXtGBZXaLVCrnNoiySJr63FRat45tgy25EgT\"}",
+    "secret" : false,
+    "revision" : 24
+  }, {
+    "config_key" : "jfconnect.entitlements.config",
+    "config" : "{\"jpd_id\":\"53e1ee64-8eff-469f-b45d-765355fac061\",\"registration_token\":\"b3d252.aesgcm256.MS27qJckGHlBPcWtkvVKR4kPnWynwAZhikfmEH2_-3vxsO1N9YArvSIyssgsxL_M2ZRu2j0awa6WDpFWr_-ZCtnndr5OobIycaSi6rAi74Zs9hAgI-gboeFzpmdHk5MoOr_ytk9uoUve7MVYeAIGV-y8GncB4u-ypwtlFl8u8N7lAP1y23bX4OR_lw-XZfbqi4a2LQqdIAdBbghx0NLB31AGQ94nUmuacoD05TxGFfslEJC3jPRq9IJba4HqxsxIfj_i9G8tPOUwcvQ274wKNUJ3vVlvXD9NKxHBPUz6NnCf8his-4h9FAOOl3eb0aP43EToOvHOXrgBSomIeyy5qV10gAfA2PTEdjy2dQxkPtDFsccJ1SDraxaPdJ2qXT9WEUF96YBp4TVK3bEcpXgAMC2hSq4upoiAy31UXJRRJNwpjGRjyZUHEf6sWn6z4huJrBcwC1KoYY1fQdFmIJzNxbnJGgy2tWnAVEnqovw1tDNaoTNzMM0s0HgzNh06Xukqja3iqB4EARJr1vRRsIq7xCgRKwdsksuGHawAjt_bgqnf_DemPtqAgrKoBd5EeZmiKr6DXFZtRZDu3-bKp1Bp1t0eh5IRjTXtWthlSrQa-OEvxV1lBtHfSqqmvGFPl9nIBrPqCRB3CVNUQFImkZgZSLt49oHrZSjd2Tob58br6pLDi8PPv8atWqNhZhkJVi73hgNo2ASTQ6tiCf71MP0XP_KtaY0KE_vf_19euEjUglgzETk-Sreqc7-Rsp2Gzl8v8_CyZxwAB_2b5GEnaZxoIfWx55q2UxDEO5DPvvleEzLKfpEn53fSVEi1bgV9o-CD3C1r9pVViGdJ9w73ow45Lrx3yWb33ypMF7lOKINDbZvglspToYePydZ8N65RmbDmHxqRqubdz9nrCiCrUIvrEq3zuhW8QJWDJF0cXy_0LU5cfkA85OOBG56xY325jBrxoDaIi7yiY6iP3ljRAfxL4U-_6gOCZQiEXwBdisKHXBZnk7HCGoJL3wfQ-4r67XT-nYCpcDf4_45qB0UC2DXcNoPiYcc9on6obAZxZw9nEqF6LK3vUXOnemD83E7yhsue8B7995n4A6uhj8Bwg1fO0gkZOflVnA5jYChrJ84-LcuDnjirtBOuZGTZADNu-jLvoLe-rE5xjUc5lXNiRxOtICxyEKHWEHlHpi1ZKxHBuFL5FBBGS1QGVb9K3053RMSPDeXYJRlQMZUHO8ndWfcfZFYO_kvCxKfAdbqVCAEcC16piDBBbAeq8Fj2vmphZOzBjh6mqD6ga4mRhZiIfyy3B6a5hvz86t8p4RDTdJALsDBhGn6b6wpwsIqSwOEKseqjsg\",\"last_transaction_id\":\"8bc8b68d-10ce-4faa-a605-e687fe541ee0\",\"access_token\":\"b3d252.aesgcm256.3Q8bGFZzmLCYOPUq12wlt_NHnCE3eds_kXE1wCXJDSTyQ7igUlgGV2VIFfOQeRfiNoWNcyipMjt3u0MRbOeszm6iix_SBTKXvSxZS9H19kDUo7_QJBQ_kFTW6FeTGPw02LSrHWSIwZQc89hi2mmOL6G2selVl0VI1sqQCN5uBnQYfFrq6RoAcsRnqVfBJ6h9c5Y0ARcd_i31EkBOUYbf9sJM6tEx7QYKGsQ1BlJVqzn66NRDnmK2m6WO0SQA2njtcu0bH_i8v3ZXv5VQxQeOr_M79KDfd1YSONmBbo6gPxagszxHAT8wS88ZfZnXjPASROqQFN2lFJAh6YBAwGxBvUcFKT_aBd5SOWDpETm3kUsloGU3gCSEbrVNkJgTGemYnu9pwzI_4YJIC0V6DqVBT0ynJqx1V-ZhR90Sekt3hnwKBpJL-a5EVj8-3r8zkg_oIqTf6oz3LR55qYhSBqg7BXTKUyY6hSdvWGl7gXFFANC1dscwfBHNhFIhFmJ25zoe9MnaI8ii-9v8hNR2yTmMCm75xzde4dpftT8LldWkYnaj1aBTUt7HJZWSTZp-aiwr94JRpRPjP1-myLjGOM5gQHuXYUvDyDmgDdaqkMeH71KBOk36FrTWkneiIf6iTn3U4V6moWTfbRVTKRnSAr9Tkg_9m0eedZEQTEwq2cEjRa9qSPkTZD6hN6GblGB6KobyJliYKRlwDhydcMdVqL1fUsv_XpNCRvP3dKxGzCS4mv-P5iDdAB332xcpAQPLc1Bgq5jdEQbnJEAQp2r2QdLMK-sKuRzruw8WyHdXa-Gasp7_yvR8PPTO_UQ1kN3Y8XMG9R3HyxFNT9i5oVRglfK_wz1h6yMVOuljftn4IkzzUCbcVjsPuRby05QXOw7d6VmqwhcZ0cFiA6N88oTB_BWQA2gOxuSMvbgS1uvuZEYlP7Ih9QDaH8GObhSahhW8AyKpaEMNxj1eA5r7qI4rx6aYoB1_SA1-fbLmQ7XeS8U9Jbs2N37QJT_vBYJj\",\"refresh_token\":\"b3d252.aesgcm256.QoJV8D5ATBIOtYM6l97OMrfmfZr2J534fekI7PDEY6lIrMaQ9fRxA-Tgnbs4MleTjbUbp2LE02l3in4WmmfIFQ\",\"next_fetch_entitlements_timestamp_millis\":1678120124870,\"last_registration_hash\":\"MoSRJ3rUassrtDomkpOdzG4A4X5CggJV+Keum1z4ORE=\",\"enforcement_on\":false,\"trigger_registration\":null,\"migrated_products_enforced\":[\"xray\"]}",
+    "secret" : false,
+    "revision" : 211
+  }, {
+    "config_key" : "jfconnect.message",
+    "config" : "{\"Messages\":{\"register\":[{\"message\":\"Registration successful.\",\"title\":\"Admin Notice\",\"message_level\":\"INFO\",\"type\":\"\",\"id\":\"\",\"origin\":1,\"visibility\":\"admin\"}]}}",
+    "secret" : false,
+    "revision" : 114
+  }, {
+    "config_key" : "jfconnect.entitlements",
+    "config" : "[{\"entitlement_name\":\"basic_scan\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"binary_provider_custom_endpoint\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"binary_provider_download_redirect\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"binary_provider_rsh\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"crowd\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"dashboard\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"enhanced_vulnerabilities\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"event_based_pull_replication\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"federated_repository\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"ha\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"impact_anlaysis\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"jfrt\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"jfrt_db_upgrade\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"jfxr\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"ldap\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"license_detection\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"live_logs\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"malicious_packages\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"metadata_license_info\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"multipush_replication\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"oauth\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"remediation_data\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"repository_replication\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"saml\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"scim\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"topology_management\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"vault_integration\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"vuln_db\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"webhooks_retention\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"xray_db_sync\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"},{\"entitlement_name\":\"xray_git_integration\",\"value\":1,\"expiry_date\":1679472920000,\"product_expiry_date\":1679472920000,\"is_trial\":true,\"customer_id\":\"\",\"blocking_quantity\":1,\"dependent_on_action\":\"\"}]",
+    "secret" : false,
+    "revision" : 113
+  }, {
+    "config_key" : "0f1bc8ee4020.license.key",
+    "config" : "cHJvZHVjdHM6CiAgYXJ0aWZhY3Rvcnk6CiAgICBwcm9kdWN0OiBaWGh3YVhKbGN6b2dNakF5TXkw\r\nd015MHlNbFF3T0RveE5Ub3lNRm9LYVdRNklEZzFOREJsTkdVNUxXUm1ZMkl0TkRoallTMWhNemcy\r\nTFRKbU9XTTRPRGN5WW1NMk53cHZkMjVsY2pvZ1lteHZkMjFsQ25CeWIzQmxjblJwWlhNNkNpQWdk\r\nR1Z5YldWa1RHbGpaVzV6WlRvZ0oyWmhiSE5sSndvZ0lISmxaMmx6ZEhKaGRHbHZia3RsZVZSdmEy\r\nVnVPaUJsZVVveVdsaEphVTlwU1hsSmFYZHBaRWhzZDBscWIybFRiR1JWU1dsM2FWbFhlRzVKYW05\r\ncFZXeE5lVTVVV1dsTVEwcHlZVmRSYVU5cFNucE5hbHBTVGxSb2RVMVljRFZsYW1NeFUwWkNTbGxy\r\nVmpCamEwcFZURmRPVGxOSE5WSlRhbHBGWkVaYWNWUXpVak5sVlRsdlpWaFJkMGx1TUM1bGVVcHNa\r\nVWhSYVU5cFNqZFlRMHA1V2xka2NHTXpVbmxaV0ZKd1lqSTFURnBZYkdOSmFuQmpTV3BuTVU1cVJU\r\nQmFWMFpzVEZSQk1WcEVVWFJPUkVFMFRrTXdORTF0VFROTVZGWnJUMFJLYUUxRVNYaE9WMUV5V214\r\nM2FVeEdkMmxqYlZadVlWaE9NR050UmpCaFZ6bDFWa2M1Y2xwWE5WVmxXRUpzV0VOSk5saERTbEZT\r\nVmtwT1VWVTFSbFJzVW1OSmFYaGpTVzVhYkdOdVRuQmlNalZqU1dwdmVVeHFRWE5ZUTBwd1drZFdk\r\nV1JIYkRCbFZuZHBUMngzYVZsWVNqQmhWMXBvV1ROU2RtTnViR05KYVhoalNXMVNiR05IZUhabFZ6\r\nRnNZbTVTVldWWVFteFlRMGsyV0VOS2VscFhlRzFZTW1oMll6TlNiRnBHZDJsbVUwbHpTVzVPTVZs\r\ncFNUWkphbWN4VG1wRk1GcFhSbXhNVkVFeFdrUlJkRTVFUVRST1F6QTBUVzFOTTB4VVZtdFBSRXBv\r\nVFVSSmVFNVhVVEphYVVselNXNU9hbU5EU1RaSmJrcHNXakpzZW1SSFZubEphWGRwV1ZoV2EwbHFi\r\nMmxoYlZwcFlqQkJjVWxwZDJsaFdFNTZTV3B2YVdGdVFtaGxWVUYzVFZkak5XVlVRbnBOVjFvMVdr\r\nUlNkRTVxUWpCWmFteHJUVE5DTWsxWVl6VmplVWx6U1cxV05HTkRTVFpPUkdkNlRVUlpNVTE2WTNs\r\nTlEzZHBZVmRHTUVscWIzaE9hbU16VFVSVmVrNTZTWGRNUTBweFpFZHJhVTlwU1ROWlYxVjNUVVJX\r\nYUZwcE1EVlpWMGt4VEZSUmVrOVVaM1JQVkU1clRVTXdlVmxVU1RWWmFsVjVXbGRKTWxwdFJXbG1V\r\nUzVGYlZvdFNpMHpXak5xWTNRNFNuVnVRa3h1UkRrNGRURjJTMkp4TWs1Vk0xaHhaRXBET0ZkSGIy\r\ndzFjM2x4T1d0SmRrMUphekY1Yms1U1JsaDFlRlF6WlVOTFVXeHBNVzVsZW1KUGNsQjRjbkJvVTNO\r\ndWFVeElWbWhCTUZwSlRHWm5WMDQyYlcxalpURlhSM1pCU2t4MVlXOWZNa1JtYzNVMWNsaDRiREpK\r\nUkRsU1kzRnpjbEEwWm1sdFdIbEJTMEZUY0U5NVVqbHJlWEpXUzNoTU5EaHVPVFpXTmpCeVl5MHhj\r\nMUoyVWpnek1FNUpSekJ4UmxkeFdXOHhjREJVZFU1dWFrbHNjVGh6UWtFM05URnFZbVoyUjFORVYy\r\nUlpRbGRzYWtaVVgycEpSSE5hVEZwRmJHZGhUV3N0VERSelVWUnlOREp1ZDA0dGIzZFNPR3hYVFZo\r\nRGNXWlZSSFJOUm1SUWJIZHlZbkJVUVVGSVpXUkhha05uVEc5TFIzWkZWalF0UkdWcVZGaFJTWEEy\r\nWTFwS2FUSnFTRlZhVWxweFduVmFlRWhUYUZSb1MwRjZVbmwxUWxSaVpVcG5iMmN4VVZaU2NXdGZN\r\nbEVLYzJsbmJtRjBkWEpsT2lCdWRXeHNDblJ5YVdGc09pQjBjblZsQ25SNWNHVTZJRlJTU1VGTUNu\r\nWmhiR2xrUm5KdmJUb2dNakF5TXkwd01pMHlNbFF3T0RveE5Ub3lNUzR6TURaYUNnPT0KICAgIHNp\r\nZ25hdHVyZTogSEpmMzZWcElBdndHd1JNZ09aNGRJSVlBVkx4cjBabzRJM1B3bTN6V01vY2p4ajM0\r\nT0c5ajg5TjEyYWNmMEFpaHhUOEI5WnNXaVdUdjU3cEFnVncyQUVFQUVhS3hIY0FQMjIyMFB2Y0dq\r\naUg1UnQzYzVCL3BlL211NnBaYmE1eGREN0dreVFMdnlMeG5xTWJTNVkxbWhiT2NuUDMwbzJYeGQ1\r\nZHNRbmZjUUk1RzBqU0JXLzJqWldUb21YZWQ0UUp0OFpwTVV6K1VzY3lFbUdVTU5JRlp3a2lrZGRh\r\nTHRNRDl5R2QwNGFPcThnMW4zZmVVNWZJcjRITElPbHhSSW9EVHBBc1BrS21CRzFMQzRyQjRJWEVP\r\naWYwVUxqbVBZY04vQnU4R3REakZEcVZsRG1YZ0VGdFJtRm5XeU0xUHBKem1pZkMzaGZ3bVA3UXVk\r\nY255dGV6ZWlBPT0KdmVyc2lvbjogMQo=\r\n",
+    "secret" : false,
+    "revision" : 8
+  } ],
+  "config" : {
+    "federation" : {
+      "inbound" : {
+        "service-id-mapping" : [ {
+          "from" : "jfrou@*",
+          "to" : "jfrou@01gsthm7tp2bnvtd7d61jbf1xj"
+        }, {
+          "from" : "jfmd@*",
+          "to" : "jfmd@01gsthm8t26kx8e8vbe0qkdkse"
+        }, {
+          "from" : "jfint@*",
+          "to" : "jfint@01gsthm3dxven60ez9sygz1r46"
+        }, {
+          "from" : "jfevt@*",
+          "to" : "jfevt@01gsthm3dxven60ez9sygz1r46"
+        }, {
+          "from" : "jfcon@*",
+          "to" : "jfcon@01gsthm3dxven60ez9sygz1r46"
+        }, {
+          "from" : "jfrt@*",
+          "to" : "jfrt@01gsthmwbbqmed0tj72bw005ed"
+        }, {
+          "from" : "jfob@*",
+          "to" : "jfob@01gsthmwbbqmed0tj72bw005ed"
+        }, {
+          "from" : "jffe@*",
+          "to" : "jffe@000"
+        } ]
+      }
+    },
+    "schema-version" : 2
+  },
+  "encryption" : "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBOVpGNUJ4OGdIem1RNm5tY05iZXBYSDVkMnBLeER4VVNkTzZHRkZMUWEvdTZiaEt6Ck94YkQrY0FWaFFCdzYzSkR4RENIUUNaMHpmcjVYcnAyVFZ0Vzh4NjF6aThHSTJBUWdhTUs4eGRFODNuUis5RFQKRE84L014Tlp3cjRzTUw1RSt1V3hSaXBJZ1RVcXZibmJVSXZSNzVKSmNJUVVDTVVPcEVzNFo4UXg2OFNDd3F0Wgpmb3hvMHFydG9xSVZtaFE3enpEUFNya2JibU5GMEVVdEJBT3FoVjVjSS9VZmJkR2pEU0dYZzdtSWdNbU10TzNPCldCWHNMQVpsbTVPT3RRdjltaDhpUE8rbXY1Smd2a2ZiZ3RTZ3g5Rk52NW9mQ0doc3d4ZnRrRFFkZEJXdndSZ2sKUlplcTBHalRqdnA0ZUVJUFIzT2ExdVJzQ2ttZXdoTzAzZ25oeHdJREFRQUJBb0lCQUhGMktBWG0xemdtS0hOMgpBZnQ5NHhZMTJ0WjVMYTdxelE3VEFJZFdaaTltYlZLYmVFMkdiTUV5QTU5aXYwbkNEMWFRRjRYSDN2TW5FVjQzCjZCNUE1REZMMExPMTNXK3QzS0tST3lkcmFuUFdwdk5qSG9pYzZFWUluRklTL1NiK1dxL1VQZTdON1pjcGdoaU0KVGExdkZPNU0ySHJRdzlMemZacmltR3ExWjExbmxFYURMTUdXVGRBYTVyMEhxTWhiR3FMU01SU0l6NkVsSHpLZQpQTm9DKzVJc1Y2R2hIaGtLOTdpRFcwRHlWNU10ejNCYWFKYXZrNkFrS1U1aWlyajg0aDVKUGQxajJ3anNLcTQwCmFuSUo5MG0wblA5Z2FpdkdnMnRRQkh3ZW0zMFB5T00xR2lDUVZZVURzYWpKMDF6SG1MR3RodlZVRFN2elkwSWgKd3BiQjZka0NnWUVBOWFlRTRWZTErd0Rjd2ZVZ2VpbHcvZlpUVm5Xd2RBVkRYeXlhb0dYaGZjU1l6TDJtRjJCdgpidFZHQmtndHVNMkd0KzdMUmNkVk1BT08xajlPVllTYUtyRzdiT1FkN3ZKYWxGYld1Q1kvb2praFlCTkVFazhaCm1tb3JuSDNiZ1pyTEZpUExBL2Z2TFJ5RUdpUW5IV3VzemFSbStSTk0rV05oZ3F5TXhEVjRhYThDZ1lFQS8ra0cKZFlxVndqNnNjWTJTTWpKYUJ3MGluS3NBQVByZHJQVTZ2dTk5a0tCYjFSOVVJc3ZLWE43c0U0Y0pzZ25IYWh2dApFYTBlclNkek9UQ1NUTnFKRnRMbmMwTk9MOVE1a0lUcjFYc3NzZitGN3l0d1NHOVR2WXdMOVdScFBkNlpML0xaCnErL3B4QStBbGdZSW96U2hudnAxNTB3cWtLczlMdlF5S0p2WlIya0NnWUFUS1ZYOEhkTmNHTjBmWS9kOGorNzQKWUZadjBBNUxmbjJhMXVmWXl4bWpyY29kYmsyZVZTOWIvZGJRZHFEYVlXMjR1eSt2NmJTRFlrT3FBcFlocFk1QQo5a3dnV2tyYmNKd1FKaFhwbDFJdlhUVjFRUXQyUWlWRkhqTDRxZmlOUzMyNzVGN1ptR1ZYcDNuR2NEdDgyQUZLCnFTQS9IWHBMbWF6cGZId2VjZTFLa1FLQmdRQ3ZBNXFiUUUvekxCR2JCd3I0c1Y3SWU3ODBEZTVPdlVKbFNzRUcKVzVzd0ViczhJZFRVaHpLNkdPcXk0Q05OVTByQjBwOXErMDZEZFB0a0hVZXdyN1FabTlzV0JPMnY0Q0FPS2hsdgpRbkhxdWFuTFM1WGFzK2c5TlUzb1lPZG9uSmQvSjBLZVI5RkRlS2FqOHpSdENVMlBBQk1xUC9qTVA0LzBVS1VOCkNLaXNJUUtCZ1FDTHNzVVA2WFpRWWI2MWs5OXNxdlZkVW4ycnhzZDdubHQzRFByTWV6SEZ6T0g5SEpyNVN3VlgKYWJ5NlhKa1I3cG5uVDdrNXF1V0RBcGl4Q3ZmNVFTeDhEZ1Y5RUoreVhGTlZ4eDFvdlFvOG9ST0xzRW1uQTF2MQpKa2FlcXBvNXBGR2xyMjRpV3FuaVRtWUU3Q1lGLyszcVkycDFIeS9FQ2llOVg3dHpFYis4cmc9PQotLS0tLUVORCBSU0EgUFJJVkFURSBLRVktLS0tLQokYWNjZXNzJC0tLS0tQkVHSU4gQ0VSVElGSUNBVEUtLS0tLQpNSUlESURDQ0FnaWdBd0lCQWdJUkFKMHdOeVVkQUV3WnFGalFFOG1BZmxFd0RRWUpLb1pJaHZjTkFRRUxCUUF3ClBURTdNRGtHQTFVRUF3d3lTa1p5YjJjZ1ZHOXJaVzRnU1hOemRXVnlJR3BtWVdOQU1ERm5jM1JvYlROa2VIWmwKYmpZd1pYbzVjM2xuZWpGeU5EWXdJQmNOTWpNd01qSXdNVGMxTVRJNVdoZ1BOekF3TURBeE1ERXdNREF3TWpoYQpNRDB4T3pBNUJnTlZCQU1NTWtwR2NtOW5JRlJ2YTJWdUlFbHpjM1ZsY2lCcVptRmpRREF4WjNOMGFHMHpaSGgyClpXNDJNR1Y2T1hONVozb3hjalEyTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUEKOVpGNUJ4OGdIem1RNm5tY05iZXBYSDVkMnBLeER4VVNkTzZHRkZMUWEvdTZiaEt6T3hiRCtjQVZoUUJ3NjNKRAp4RENIUUNaMHpmcjVYcnAyVFZ0Vzh4NjF6aThHSTJBUWdhTUs4eGRFODNuUis5RFRETzgvTXhOWndyNHNNTDVFCit1V3hSaXBJZ1RVcXZibmJVSXZSNzVKSmNJUVVDTVVPcEVzNFo4UXg2OFNDd3F0WmZveG8wcXJ0b3FJVm1oUTcKenpEUFNya2JibU5GMEVVdEJBT3FoVjVjSS9VZmJkR2pEU0dYZzdtSWdNbU10TzNPV0JYc0xBWmxtNU9PdFF2OQptaDhpUE8rbXY1Smd2a2ZiZ3RTZ3g5Rk52NW9mQ0doc3d4ZnRrRFFkZEJXdndSZ2tSWmVxMEdqVGp2cDRlRUlQClIzT2ExdVJzQ2ttZXdoTzAzZ25oeHdJREFRQUJveGt3RnpBVkJnUlZIUkVCQkEwd0M2QUpCZ1JWSFJFQkFnRUEKTUEwR0NTcUdTSWIzRFFFQkN3VUFBNElCQVFDWlREVE5Hb2hLclA0bnhrajlnY1ZRYkdkekF5SFdUVUEvbkpQegpwaHpJWWdGbW9hRzNxR01zaEhJZDE3YzF4L3ZSUkhDaG9RUGVaZHd6a0Y2Z2RuS0FEdTBVY1Z2emk0VXZKR0JBCkpMbjNVcEZVR1lvVXA5cVN4VngrbmMyRjJwMllKc1diVElLcXJ1YnM2RVpVQzFyQjFEV09qc09RU2owcWwveGEKaUY4VmpjQ3Q3SW5jeDZvcncxNzczWW5Gd1BaeHFkNm02VnlvcGcySmFHNGluZ2Nud3FNUXBlVGoyUDBZdlZxbApsMVBLdG1DMUFkdFhYN2NlMmUxdkpQdEcwT2loV09yMTdFcGRwTzEzNW5JRnRJTlFYZ3Qyb0FMZWQzZlZrWGU2CkhUYVR6d2NOQkRpcyticXlVRVpsTmljVXlGMHc5eVBlay9kOW1uSjV5SVduVEtUdQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCiRhY2Nlc3Mtc2VncyQtLS0tLUJFR0lOIFJTQSBQUklWQVRFIEtFWS0tLS0tCk1JSUVvd0lCQUFLQ0FRRUEzVWxNREJVekpIK3dNbjBsWWZpdzFLbWRCV3MrRzJDVmE4SnNzS2NPRDV5WHo2S2sKQVRSRk1NY2RTK1lNaFdhTkZVWHBlUDQ1ckVtcUtGYk4zdUNRazNtc3BFWU9Gcm1FSkhCa3BaVm5ybU00QlFBcgo3R0o3NXNySVlYYS93QUQ2OWwvQW9IK2ROQ1lCOXBaTC8wckdtRXNzUllHU1FYUWdGUVFPbURGTkw1ZVpTVlNLCmlQM09jUzEwSnl3cEFjNXYxNGVpYXdFR2RRT2FGVnY3WXdBTFk4WHZJVTgvQWUxa3o3UzE1OFBKendjbVBOOFIKekxvRUxmVklia1R6QmI5U3QwZmd5OXhpOFIzY1J3elFGci9QN0xvcHIzbE5PQ1ZDK1FzMnpsK2hzUXdlWmZyRApJSEkwSTR3VktSdzgzT1NIMlJjZ2JoSm1FYVR4RG5WUS95eDZrd0lEQVFBQkFvSUJBRElhTXVnM2NwVnNmY0hvCnVPcVdTcjlUeWZRY3BIckJZd043aVcxejNZaW1YVzhMTlpQNk9FSkRpdndRMGJ2d2pMZ0kxTVJxMXpjTmxNTysKWjYxemJmaWVIM3N3UzJkVXlMa1JZNUJrSkE0RmMvMFozVmdQc2xyK2hlRWZhR242THRoU3RNUUNNTjlLVGI1OQpxQ1pjMFZ0UkJleVUyajhNb21qdnVyZzF6WEtkTmhLc1RZdjFPVWRsZDVac2MrY2NEcUgzcUowMW5DM1dlZHNGCnBpMFp2MlQ5NUZFdTdzNnF6OGtkdU44YkRKaVh0MHRvemZJeUJDcStLR0pWVlZvaS9SZU8xQXhHeVBZdkRoNnYKNHNYZHI1SElNOFQ5ZWNKZHlkZXYxRnI5b2I3UnE4anQ3VDFNRFBuTXZXS1VtT1dBMGt3bGd2V2tWM0g5ZU13aQpFTHkyd3NVQ2dZRUE0bFd4MStvR3E1Tms0d2dZelJ5MjNIMjY5cUJvbTdZQ01BenRRVXE2TXZROTBtYVZ0TWJsCm5GYU5RcDRxMUZPTnN0WjFkN292bUQyeE54amd4eEduNGsybEljT2d0WW9MT2lvRWp5MWpZb1l0TUU0UWp6c2sKSXZab2lDeUFJL0lJUHJIMEc5dDBRZzV6c09ENDFCVktoQWxRUEw3eXFBSkZ2akpFaDNnN0ZMOENnWUVBK2tvMQoxdjVCSXVoTGFOU0xZeFJXcWRzcm5CWFl0L282KzIrMGxsRlBoaTQrWEljTXFZckFkQ3VxTEJCWXdsb3luM2djCm5ZeDlkWFVZWkJvbzlVeGYrMGtCRURoZy9YOWRLSkRoMHhIWU5MZmtJZWxuM2RqOU9PNk0rbGJLYkFMeXJoVmkKNkdTOWM0NUZ4V0dwNEFKcFRsNVdRVkdsSzg0NmFWdlRpa1ppYXkwQ2dZQnlYOWUxUW9BSWFEMk5OT1JEa29VZAp1ek9sdWIzaklnRE5BMXRKcVZlYXRDNGhpdEdRUHdwOURJZnA2RC9BZUZDYzFSOGJWNjBCZy90djJsU01oSEdRClBLaDcvWDNTLzJWWkNTNndvOEViWXE2blFHdkIxYU1YUCtubkZvWFNwRlppU0U4UlhMN05PcnhmMy9BZVRId1IKYVJ0dzl4VnNyV2xOQ2QzemoyQmJ4UUtCZ0hXa2MvSDl4L2YwWDUyQ2FaSEVlWWVVOE1hSXJqaXJjUlhGeDRmdgo2QVVWcjFJbVdCbElrblVJSVJCZERwc3JjaWZxZU9qRXBDT1ZTa1dpMWlXV0pIY2tOVSsrY0RnMnFUN3IrbmtQCkppU0JXc1ZsdytCT29aY2s2VGF4bkt0d0owa1QzRTJITEZVb1Jqc2tVSWh1R2Jrd05qSzFnWUU1aWRNRHlrWncKRnNweEFvR0JBTTdYNTg0NUd1bjFLRlYxZEJHZXF3MUNnMEdiVWwyRjVjakRuZDY3Rm1PZlhDVTBJaEphdFB5UgpRQW5jN3VubVpMdjgzaXpmZkMxOFlQdUROWVR5WXE1QkpFYnhYUkFxQTRsV3BMOUh5WjFxcGhTT1ZCSDJ6d3VwCmp2ZTJMK3h1VjdpVTg0OXRZSkhmUmRrNXVkK1VoM1M5eXpsWEJjWmpWcXFuUFM0MHpXYU8KLS0tLS1FTkQgUlNBIFBSSVZBVEUgS0VZLS0tLS0KJGFjY2VzcyQtLS0tLUJFR0lOIENFUlRJRklDQVRFLS0tLS0KTUlJRE56Q0NBaCtnQXdJQkFnSVJBTkNIWGJZV1EwMExuS2Y2TThwR0tjSXdEUVlKS29aSWh2Y05BUUVMQlFBdwpPREUyTURRR0ExVUVBd3d0U2taeWIyY2dVbTl2ZENCRFFTQnFabUZqUURBeFozTjBhRzB6WkhoMlpXNDJNR1Y2Ck9YTjVaM294Y2pRMk1DQVhEVEl6TURJeU1ERTNOVEV5T1ZvWUR6Y3dNREF3TVRBeE1EQXdNREk0V2pBNE1UWXcKTkFZRFZRUUREQzFLUm5Kdlp5QlNiMjkwSUVOQklHcG1ZV05BTURGbmMzUm9iVE5rZUhabGJqWXdaWG81YzNsbgplakZ5TkRZd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUJBUURkU1V3TUZUTWtmN0F5CmZTVmgrTERVcVowRmF6NGJZSlZyd215d3B3NFBuSmZQb3FRQk5FVXd4eDFMNWd5RlpvMFZSZWw0L2ptc1Nhb28KVnMzZTRKQ1RlYXlrUmc0V3VZUWtjR1NsbFdldVl6Z0ZBQ3ZzWW52bXlzaGhkci9BQVByMlg4Q2dmNTAwSmdIMgpsa3YvU3NhWVN5eEZnWkpCZENBVkJBNllNVTB2bDVsSlZJcUkvYzV4TFhRbkxDa0J6bS9YaDZKckFRWjFBNW9WClcvdGpBQXRqeGU4aFR6OEI3V1RQdExYbnc4blBCeVk4M3hITXVnUXQ5VWh1UlBNRnYxSzNSK0RMM0dMeEhkeEgKRE5BV3Y4L3N1aW12ZVUwNEpVTDVDemJPWDZHeERCNWwrc01nY2pRampCVXBIRHpjNUlmWkZ5QnVFbVlScFBFTwpkVkQvTEhxVEFnTUJBQUdqT2pBNE1BNEdBMVVkRHdFQi93UUVBd0lDaERBUEJnTlZIUk1CQWY4RUJUQURBUUgvCk1CVUdCRlVkRVFFRURUQUxvQWtHQkZVZEVRRUNBUUF3RFFZSktvWklodmNOQVFFTEJRQURnZ0VCQUxCdXREU1IKTnZXajhBRVBkSHhLOFdUV2Z2b2gzdGpsRmdSNWtZRDdjRWU2cUhZUXpYTUFzWHZSeXpvRHF2U2tSV1FwSW4xZApNWGwvZHFIOVhLbE9mVWhCUC9vNGczRjZ6blo0bDJZaGpINXM2eDQwU2ptdTZhVm5wVnJYMjVvVGkzQVhlZW1CCkNJZlY4WGxjY3dpblBnOEV4SW0ySlJSOU5GZjAwYkdpelVNeWpSeHBlejRHazRmSWtyckg4TlhGek9qQ1JRMHkKK3lteTFBbi9XQktTVEtnZUNvQTRReElqZWRGRUlPbGlhcjd5TW5wUXVGc2lPSjlQczdBTzdTdnc5U0JyMitqTQpxeHhvSGF3dW9JMUhyVy9ZOHVtUlVuRlJabnBSNVpyQlQyTWE0U0x6ci9iajQvb21wQWNVVFExeHkyMkpjdkVBCjA5MmMvcUhtRFhpSFFmcz0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=",
+  "NodeIdServiceId" : "0f1bc8ee4020###-###jfac@01gsthm3dxven60ez9sygz1r46"
+}

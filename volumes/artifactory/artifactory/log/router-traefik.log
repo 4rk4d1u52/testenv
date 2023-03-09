@@ -1,0 +1,41 @@
+2023-02-21T17:51:38.990Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-02-21T17:51:38.990Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-02-21T17:51:38.991Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2023-02-27T13:34:18.804Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-02-27T13:34:18.822Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-02-27T13:34:18.895Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2023-02-27T15:04:37.070Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-02-27T15:04:37.081Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-02-27T15:04:37.106Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2023-02-27T16:07:51.096Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-02-27T16:07:51.098Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-02-27T16:07:51.105Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2023-02-28T11:26:13.498Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-02-28T11:26:13.517Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-02-28T11:26:13.533Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2023-02-28T14:42:51.217Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-02-28T14:42:51.221Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-02-28T14:42:51.236Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2023-02-28T20:47:22.517Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-02-28T20:47:22.519Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-02-28T20:47:22.538Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2023-02-28T21:43:26.430Z [jfrou] [INFO ] [                ] [logger.go:90                  ] [main                ] [] - I have to go...
+2023-02-28T21:43:26.431Z [jfrou] [INFO ] [                ] [logger.go:90                  ] [main                ] [] - Stopping server gracefully
+2023-02-28T21:43:26.431Z [jfrou] [ERROR] [                ] [server_entrypoint_tcp.go:197  ] [main                ] [] - accept tcp [::]:8082: use of closed network connection
+2023-02-28T21:43:26.431Z [jfrou] [ERROR] [                ] [server_entrypoint_tcp.go:197  ] [main                ] [] - accept tcp 127.0.0.1:8049: use of closed network connection
+2023-02-28T21:43:26.431Z [jfrou] [ERROR] [                ] [server_entrypoint_tcp.go:197  ] [main                ] [] - accept tcp 127.0.0.1:8046: use of closed network connection
+2023-02-28T21:43:26.433Z [jfrou] [ERROR] [                ] [server_entrypoint_tcp.go:272  ] [main                ] [] - close tcp [::]:8082: use of closed network connection
+2023-02-28T21:43:26.433Z [jfrou] [ERROR] [                ] [server_entrypoint_tcp.go:272  ] [main                ] [] - close tcp 127.0.0.1:8049: use of closed network connection
+2023-02-28T21:43:26.433Z [jfrou] [ERROR] [                ] [server_entrypoint_tcp.go:272  ] [main                ] [] - close tcp 127.0.0.1:8046: use of closed network connection
+2023-03-01T10:03:45.270Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-03-01T10:03:45.273Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-03-01T10:03:45.282Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2023-03-01T11:38:15.129Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-03-01T11:38:15.147Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-03-01T11:38:15.160Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2023-03-01T13:06:46.111Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-03-01T13:06:46.140Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-03-01T13:06:46.149Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2023-03-06T09:21:36.765Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-03-06T09:21:36.767Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-03-06T09:21:36.778Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider

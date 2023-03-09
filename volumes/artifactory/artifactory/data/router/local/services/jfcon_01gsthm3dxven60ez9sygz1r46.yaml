@@ -1,0 +1,16 @@
+endpoints:
+    - paths:
+        - match: /jfconnect/(.*)
+          replace: /$1
+      port: 8030
+      protocol: 1
+    - paths:
+        - match: /com\.jfrog\.jfconnect\..*
+          replace: ""
+      port: 8035
+      protocol: 2
+healthcheckendpoint:
+    path: /api/v1/system/readiness
+    port: 8030
+nodeid: 0f1bc8ee4020
+serviceid: jfcon@01gsthm3dxven60ez9sygz1r46

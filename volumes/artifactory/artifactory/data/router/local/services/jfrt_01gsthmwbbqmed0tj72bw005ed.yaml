@@ -1,0 +1,21 @@
+endpoints:
+    - paths:
+        - match: /artifactory
+          replace: ""
+        - match: /artifactory/(.*)
+          replace: ""
+        - match: /v2/(.*)
+          replace: ""
+        - match: /.well-known/terraform.json
+          replace: ""
+        - match: /jfconfig/api/v1/keys
+          replace: /artifactory/api/crypto/keys
+        - match: /jfconfig/api/v1/keys/(.*)
+          replace: /artifactory/api/crypto/keys/$1
+      port: 8081
+      protocol: 1
+healthcheckendpoint:
+    path: /artifactory/api/v1/system/readiness
+    port: 8091
+nodeid: 0f1bc8ee4020
+serviceid: jfrt@01gsthmwbbqmed0tj72bw005ed

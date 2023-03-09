@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Hudson-Version: 2.319.3
+Plugin-Dependencies: config-file-provider:3.7.0,token-macro:2.8
+Implementation-Title: Managed Scripts
+Long-Name: Managed Scripts
+Implementation-Version: 1.5.6
+Group-Id: org.jenkinsci.plugins
+Specification-Title: Managed Scripts
+Plugin-ScmUrl: https://github.com/jenkinsci/managed-scripts-plugin
+Plugin-Version: 1.5.6
+Jenkins-Version: 2.319.3
+Url: https://github.com/jenkinsci/managed-scripts-plugin
+Short-Name: managed-scripts
+Plugin-Developers: Dominik Bartholdi:imod:,J White:gbigenios:
+Build-Jdk-Spec: 1.8
+Created-By: Maven Archiver 3.6.0
+Specification-Version: 1.5
+

@@ -1,0 +1,11 @@
+endpoints:
+    - paths:
+        - match: /observability/(.*)
+          replace: /$1
+      port: 8036
+      protocol: 1
+healthcheckendpoint:
+    path: /api/v1/system/readiness
+    port: 8036
+nodeid: 0f1bc8ee4020
+serviceid: jfob@01gsthmwbbqmed0tj72bw005ed
