@@ -19,7 +19,7 @@ services:
         - /var/run/docker.sock:/var/run/docker.sock      
       build:
         context: ../dockerfiles/slave
-      command: java -jar agent.jar -jnlpUrl http://192.168.44.44:8880/manage/computer/Slave/jenkins-agent.jnlp -secret 556de03b5fdc77de41a550b4a2493e938296af22255f16e41f5976ef7c11e662 -workDir "/home/"
+      command: java -jar agent.jar -jnlpUrl http://192.168.44.44:8880/computer/Slave/jenkins-agent.jnlp -secret bafef9edc55bf0b6598254cbdbfae95b6ecd645e2a6b86739fffba2f998a385e -workDir "/home/"
       networks:
         - docker_network       
     selenium_hub:

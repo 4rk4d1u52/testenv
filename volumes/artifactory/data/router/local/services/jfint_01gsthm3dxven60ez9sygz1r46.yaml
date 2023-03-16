@@ -12,5 +12,5 @@ endpoints:
 healthcheckendpoint:
     path: /api/v1/system/readiness
     port: 8071
-nodeid: 0f1bc8ee4020
+nodeid: a7c69def83ee
 serviceid: jfint@01gsthm3dxven60ez9sygz1r46

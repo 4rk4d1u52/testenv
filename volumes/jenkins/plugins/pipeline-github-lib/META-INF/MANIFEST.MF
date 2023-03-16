@@ -1,22 +1,20 @@
 Manifest-Version: 1.0
-Hudson-Version: 2.303.1
-Plugin-Dependencies: pipeline-groovy-lib:589.vb_a_b_4a_a_8c443c,git:4.
- 11.1
-Implementation-Title: Pipeline: GitHub Groovy Libraries
-Long-Name: Pipeline: GitHub Groovy Libraries
-Implementation-Version: 38.v445716ea_edda_
-Group-Id: org.jenkins-ci.plugins
-Minimum-Java-Version: 1.8
-Plugin-License-Name: MIT License
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
 Specification-Title: Pipeline: GitHub Groovy Libraries
-Plugin-ScmUrl: https://github.com/jenkinsci/pipeline-github-lib-plugin
-Plugin-Version: 38.v445716ea_edda_
-Jenkins-Version: 2.303.1
-Url: https://github.com/jenkinsci/pipeline-github-lib-plugin
-Short-Name: pipeline-github-lib
-Plugin-License-Url: https://opensource.org/licenses/MIT
-Plugin-Developers: 
-Build-Jdk-Spec: 1.8
-Created-By: Maven Archiver 3.5.2
 Specification-Version: 0.0
+Implementation-Title: Pipeline: GitHub Groovy Libraries
+Implementation-Version: 42.v0739460cda_c4
+Group-Id: org.jenkins-ci.plugins
+Short-Name: pipeline-github-lib
+Long-Name: Pipeline: GitHub Groovy Libraries
+Url: https://github.com/jenkinsci/pipeline-github-lib-plugin
+Plugin-Version: 42.v0739460cda_c4
+Hudson-Version: 2.361.4
+Jenkins-Version: 2.361.4
+Plugin-Dependencies: pipeline-groovy-lib:629.vb_5627b_ee2104,git:5.0.0
+Plugin-Developers: 
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/pipeline-github-lib-plugin
 

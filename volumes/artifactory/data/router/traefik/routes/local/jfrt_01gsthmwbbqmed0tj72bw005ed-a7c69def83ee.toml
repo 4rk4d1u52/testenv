@@ -1,0 +1,108 @@
+# This template is used to create routing rules for Traefik
+# References: https://doc.traefik.io/traefik/reference/dynamic-configuration/file/
+#             https://doc.traefik.io/traefik/routing/routers
+#             https://doc.traefik.io/traefik/routing/services
+
+[http.routers]
+
+  [http.routers.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-rule0-internal]
+    entryPoints = ["internal"]
+    service = "jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0"
+    priority = 712
+    rule = "Path(`/artifactory`)"
+
+  [http.routers.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-rule0-external]
+    entryPoints = ["external"]
+    service = "jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0"
+    priority = 712
+    rule = "Path(`/artifactory`)"
+    middlewares = ["mtls"]
+
+  [http.routers.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-rule1-internal]
+    entryPoints = ["internal"]
+    service = "jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0"
+    priority = 717
+    rule = "PathPrefix(`/artifactory/`)"
+
+  [http.routers.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-rule1-external]
+    entryPoints = ["external"]
+    service = "jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0"
+    priority = 717
+    rule = "PathPrefix(`/artifactory/`)"
+    middlewares = ["mtls"]
+
+  [http.routers.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-rule2-internal]
+    entryPoints = ["internal"]
+    service = "jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0"
+    priority = 708
+    rule = "PathPrefix(`/v2/`)"
+
+  [http.routers.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-rule2-external]
+    entryPoints = ["external"]
+    service = "jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0"
+    priority = 708
+    rule = "PathPrefix(`/v2/`)"
+    middlewares = ["mtls"]
+
+  [http.routers.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-rule3-internal]
+    entryPoints = ["internal"]
+    service = "jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0"
+    priority = 727
+    rule = "Path(`/.well-known/terraform.json`)"
+
+  [http.routers.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-rule3-external]
+    entryPoints = ["external"]
+    service = "jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0"
+    priority = 727
+    rule = "Path(`/.well-known/terraform.json`)"
+    middlewares = ["mtls"]
+
+  [http.routers.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-rule4-internal]
+    entryPoints = ["internal"]
+    service = "jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0"
+    priority = 721
+    rule = "Path(`/jfconfig/api/v1/keys`)"
+    middlewares = ["jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-4-strip","jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-4-add"]
+
+  [http.routers.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-rule4-external]
+    entryPoints = ["external"]
+    service = "jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0"
+    priority = 721
+    rule = "Path(`/jfconfig/api/v1/keys`)"
+    middlewares = ["jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-4-strip","jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-4-add","mtls"]
+
+  [http.routers.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-rule5-internal]
+    entryPoints = ["internal"]
+    service = "jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0"
+    priority = 726
+    rule = "PathPrefix(`/jfconfig/api/v1/keys/`)"
+    middlewares = ["jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-5-strip","jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-5-add"]
+
+  [http.routers.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-rule5-external]
+    entryPoints = ["external"]
+    service = "jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0"
+    priority = 726
+    rule = "PathPrefix(`/jfconfig/api/v1/keys/`)"
+    middlewares = ["jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-5-strip","jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-5-add","mtls"]
+
+[http.services]
+
+  [http.services.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0.loadBalancer]
+    passHostHeader = false
+
+    [[http.services.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0.loadBalancer.servers]]
+      url = "http://localhost:8081"
+
+[http.middlewares]
+
+  [http.middlewares.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-4-add.addPrefix]
+    prefix = "/artifactory/api/crypto/keys"
+
+  [http.middlewares.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-4-strip.stripPrefix]
+    prefixes = ["/jfconfig/api/v1/keys"]
+
+  [http.middlewares.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-5-add.addPrefix]
+    prefix = "/artifactory/api/crypto/keys"
+
+  [http.middlewares.jfrt_01gsthmwbbqmed0tj72bw005ed-a7c69def83ee-0-5-strip.stripPrefix]
+    prefixes = ["/jfconfig/api/v1/keys/"]

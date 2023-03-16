@@ -18,6 +18,8 @@ federation:
       to: "jfob@01gsthmwbbqmed0tj72bw005ed"
     - from: "jffe@*"
       to: "jffe@000"
+    - from: "jffe@*"
+      to: "jffe@01gsthm3dxven60ez9sygz1r46"
 licenses:
 - server-name: "0f1bc8ee4020"
   key: "cHJvZHVjdHM6CiAgYXJ0aWZhY3Rvcnk6CiAgICBwcm9kdWN0OiBaWGh3YVhKbGN6b2dNakF5TXkw\r\

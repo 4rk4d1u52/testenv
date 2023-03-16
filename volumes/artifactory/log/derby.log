@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Mon Mar 06 09:21:14 UTC 2023:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0186-b639-9bc8-00001ccec4f8 
-on database directory /var/opt/jfrog/artifactory/data/artifactory/derby with class loader java.net.URLClassLoader@6f539caf 
+Thu Mar 16 11:56:47 GMT 2023:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0186-ea47-9f09-00001dab0998 
+on database directory /var/opt/jfrog/artifactory/data/artifactory/derby with class loader java.net.URLClassLoader@17a7cec2 
 Loaded from file:/opt/jfrog/artifactory/app/artifactory/tomcat/lib/derby-10.14.2.0.jar
 java.vendor=Eclipse Adoptium
 java.runtime.version=17.0.5+8

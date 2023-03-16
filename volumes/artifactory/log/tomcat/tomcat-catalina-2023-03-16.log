@@ -1,0 +1,60 @@
+16-Mar-2023 10:11:15.538 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+16-Mar-2023 10:11:15.590 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8091"]
+16-Mar-2023 10:11:15.599 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+16-Mar-2023 10:11:15.610 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-Mar-2023 10:11:15.612 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.71-jfrog]
+16-Mar-2023 10:11:15.648 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml]
+16-Mar-2023 10:11:15.656 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml]
+16-Mar-2023 10:11:15.685 WARNING [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/artifactory] in deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has been ignored
+16-Mar-2023 10:11:15.696 WARNING [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/artifactory.war] inside the host appBase has been specified, and will be ignored
+16-Mar-2023 10:11:15.697 WARNING [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+16-Mar-2023 10:11:15.700 WARNING [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/access.war] inside the host appBase has been specified, and will be ignored
+16-Mar-2023 10:11:28.358 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has finished in [12,680] ms
+16-Mar-2023 10:12:00.924 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml] has finished in [45,276] ms
+16-Mar-2023 10:12:00.925 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/ROOT]
+16-Mar-2023 10:12:01.014 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/ROOT] has finished in [89] ms
+16-Mar-2023 10:12:01.017 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+16-Mar-2023 10:12:01.136 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8091"]
+16-Mar-2023 10:12:01.167 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+16-Mar-2023 10:12:04.477 WARNING [2023-03-16T10:11:56.492Z|eaa226345ad0e233|art-exec-1] org.glassfish.jersey.internal.Errors.logErrors The following warnings have been detected: WARNING: A HTTP GET method, public javax.ws.rs.core.Response org.artifactory.ui.rest.resource.admin.configuration.repositories.RepoConfigResource.getRemoteUrlsByType(java.lang.String), should not consume any entity.
+
+16-Mar-2023 11:28:12.979 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+16-Mar-2023 11:28:13.086 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8091"]
+16-Mar-2023 11:28:13.088 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+16-Mar-2023 11:28:13.134 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-Mar-2023 11:28:13.136 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.71-jfrog]
+16-Mar-2023 11:28:13.177 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml]
+16-Mar-2023 11:28:13.178 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml]
+16-Mar-2023 11:28:13.450 WARNING [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/artifactory] in deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has been ignored
+16-Mar-2023 11:28:13.451 WARNING [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+16-Mar-2023 11:28:13.468 WARNING [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/access.war] inside the host appBase has been specified, and will be ignored
+16-Mar-2023 11:28:13.470 WARNING [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/artifactory.war] inside the host appBase has been specified, and will be ignored
+16-Mar-2023 11:28:24.246 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has finished in [11,056] ms
+16-Mar-2023 11:28:49.424 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml] has finished in [36,249] ms
+16-Mar-2023 11:28:49.425 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/ROOT]
+16-Mar-2023 11:28:49.461 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/ROOT] has finished in [35] ms
+16-Mar-2023 11:28:49.465 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+16-Mar-2023 11:28:49.547 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8091"]
+16-Mar-2023 11:28:49.556 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+16-Mar-2023 11:28:53.212 WARNING [2023-03-16T11:28:45.840Z|dd1e8e6cf33bab32|art-exec-1] org.glassfish.jersey.internal.Errors.logErrors The following warnings have been detected: WARNING: A HTTP GET method, public javax.ws.rs.core.Response org.artifactory.ui.rest.resource.admin.configuration.repositories.RepoConfigResource.getRemoteUrlsByType(java.lang.String), should not consume any entity.
+
+16-Mar-2023 11:56:42.997 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+16-Mar-2023 11:56:43.083 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8091"]
+16-Mar-2023 11:56:43.086 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-127.0.0.1-8040"]
+16-Mar-2023 11:56:43.118 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-Mar-2023 11:56:43.122 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.71-jfrog]
+16-Mar-2023 11:56:43.188 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml]
+16-Mar-2023 11:56:43.191 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml]
+16-Mar-2023 11:56:43.319 WARNING [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/access] in deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml] has been ignored
+16-Mar-2023 11:56:43.330 WARNING [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/access.war] inside the host appBase has been specified, and will be ignored
+16-Mar-2023 11:56:43.448 WARNING [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor The path attribute with value [/artifactory] in deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has been ignored
+16-Mar-2023 11:56:43.451 WARNING [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor A docBase [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/artifactory.war] inside the host appBase has been specified, and will be ignored
+16-Mar-2023 11:56:51.424 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/artifactory.xml] has finished in [8,232] ms
+16-Mar-2023 11:57:21.936 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [/opt/jfrog/artifactory/app/artifactory/tomcat/conf/Catalina/localhost/access.xml] has finished in [38,747] ms
+16-Mar-2023 11:57:21.939 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/ROOT]
+16-Mar-2023 11:57:21.993 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/opt/jfrog/artifactory/app/artifactory/tomcat/webapps/ROOT] has finished in [54] ms
+16-Mar-2023 11:57:21.996 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+16-Mar-2023 11:57:22.086 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8091"]
+16-Mar-2023 11:57:22.136 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-127.0.0.1-8040"]
+16-Mar-2023 11:57:30.214 WARNING [2023-03-16T11:57:16.324Z|e86b5ca3eac275f|art-exec-1] org.glassfish.jersey.internal.Errors.logErrors The following warnings have been detected: WARNING: A HTTP GET method, public javax.ws.rs.core.Response org.artifactory.ui.rest.resource.admin.configuration.repositories.RepoConfigResource.getRemoteUrlsByType(java.lang.String), should not consume any entity.
+

@@ -39,3 +39,12 @@
 2023-03-06T09:21:36.765Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
 2023-03-06T09:21:36.767Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
 2023-03-06T09:21:36.778Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2023-03-16T10:12:04.784Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-03-16T10:12:04.817Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-03-16T10:12:04.822Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2023-03-16T11:28:53.313Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-03-16T11:28:53.317Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-03-16T11:28:53.347Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider
+2023-03-16T11:57:30.384Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider aggregator aggregator.ProviderAggregator
+2023-03-16T11:57:30.406Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *file.Provider
+2023-03-16T11:57:30.415Z [jfrou] [INFO ] [                ] [logger.go:58                  ] [main                ] [] - Starting provider *traefik.Provider

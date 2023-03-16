@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>pipeline-build-step</artifactId>
-  <version>2.18.1</version>
+  <version>486.vd08f550cceee</version>
   <packaging>hpi</packaging>
   <name>Pipeline: Build Step</name>
   <description>The Jenkins Plugins Parent POM Project</description>
@@ -19,7 +19,7 @@
   <scm>
     <connection>scm:git:https://github.com/jenkinsci/pipeline-build-step-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/pipeline-build-step-plugin.git</developerConnection>
-    <tag>pipeline-build-step-2.18.1</tag>
+    <tag>d08f550cceeeceebe833593405488cf14cf1b1ff</tag>
     <url>https://github.com/jenkinsci/pipeline-build-step-plugin</url>
   </scm>
   <distributionManagement>
@@ -36,13 +36,13 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-step-api</artifactId>
-      <version>622.vb_8e7c15b_c95a_</version>
+      <version>625.vd896b_f445a_f8</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.jenkins-ci.plugins.workflow</groupId>
       <artifactId>workflow-api</artifactId>
-      <version>1143.v2d42f1e9dea_5</version>
+      <version>1153.vb_912c0e47fb_a_</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -60,7 +60,7 @@
     <dependency>
       <groupId>org.jenkins-ci.plugins</groupId>
       <artifactId>structs</artifactId>
-      <version>308.v852b473a2b8c</version>
+      <version>318.va_f3ccb_729b_71</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -91,7 +91,7 @@
     <dependency>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>animal-sniffer-annotations</artifactId>
-      <version>1.21</version>
+      <version>1.22</version>
       <scope>provided</scope>
       <optional>true</optional>
     </dependency>
@@ -113,13 +113,7 @@
       <plugin>
         <groupId>org.jenkins-ci.tools</groupId>
         <artifactId>maven-hpi-plugin</artifactId>
-        <version>3.27</version>
-        <extensions>true</extensions>
-      </plugin>
-      <plugin>
-        <groupId>org.kohsuke.stapler</groupId>
-        <artifactId>maven-stapler-plugin</artifactId>
-        <version>1.17</version>
+        <version>3.34</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

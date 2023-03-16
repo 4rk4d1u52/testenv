@@ -1,23 +1,23 @@
 Manifest-Version: 1.0
-Hudson-Version: 2.289.1
-Plugin-Dependencies: jjwt-api:0.11.2-5.143e44951c52;resolution:=option
- al,okhttp-api:4.9.2-20211102,jackson2-api:2.13.2-260.v43d711474c77
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 11
+Specification-Title: GitHub API Plugin
+Specification-Version: 1.303
 Implementation-Title: GitHub API Plugin
-Long-Name: GitHub API Plugin
-Implementation-Version: 1.303-400.v35c2d8258028
+Implementation-Version: 1.303-417.ve35d9dd78549
 Group-Id: org.jenkins-ci.plugins
-Minimum-Java-Version: 1.8
+Short-Name: github-api
+Long-Name: GitHub API Plugin
+Url: https://github.com/jenkinsci/github-api-plugin
+Plugin-Version: 1.303-417.ve35d9dd78549
+Hudson-Version: 2.361.4
+Jenkins-Version: 2.361.4
+Plugin-Dependencies: commons-lang3-api:3.12.0-36.vd97de6465d5b_,jjwt-api
+ :0.11.5-77.v646c772fddb_0;resolution:=optional,okhttp-api:4.9.3-108.v0f
+ eda04578cf,jackson2-api:2.13.4.20221013-295.v8e29ea_354141
+Plugin-Developers: 
 Support-Dynamic-Loading: true
 Plugin-License-Name: The MIT License (MIT)
-Specification-Title: GitHub API Plugin
+Plugin-License-Url: https://opensource.org/licenses/MIT
 Plugin-ScmUrl: https://github.com/jenkinsci/github-api-plugin
-Plugin-Version: 1.303-400.v35c2d8258028
-Jenkins-Version: 2.289.1
-Url: https://github.com/jenkinsci/github-api-plugin
-Short-Name: github-api
-Plugin-License-Url: http://opensource.org/licenses/MIT
-Plugin-Developers: 
-Build-Jdk-Spec: 1.8
-Created-By: Maven Archiver 3.5.2
-Specification-Version: 1.303
 

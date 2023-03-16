@@ -19,18 +19,18 @@ security:
     special-char: 1              # minimum number of special char that the password must contain. Special chars list between double quotes " !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
     digit: 0                     # minimum number of digits that the password must contain
     length: 4                    # minimum length of the password
-    cannot-match-username: true  # If ture, the password cannot be changed to match the username (case insensitive)
-    not-match-old: true          # should access allow setting a new password to the same one currently set for the user
+    cannot-match-username: true  # If true, the password cannot be changed to match the username (case-insensitive)
+    not-match-old: true          # should Access allow setting a new password to the same one currently set for the user
   user-lock-policy:
     attempts: 0                     # number of failed login attempts to allow before locking a user. 0 (default) means the feature is disabled
     seconds-to-unlock: 1            # number of seconds to wait before re-enabling login for a user that has been locked out
     password-expiry-days: 0         # number of days before a password expires. Set by Artifactory
-    admin-password-expirable: false # does the access admin password expire
+    admin-password-expirable: false # does the Access admin password expire
     max-login-delay-millis: 60000
     base-login-delay-millis: 1000
     cache:
       expire-after-write-seconds: 86400 # number of seconds Access waits before deleting an entry from the cache
-      maximum-size: 10000              # maximum number of entries allows in the cache
+      maximum-size: 10000              # maximum number of entries allowed in the cache
 
   audit:
     enabled: true           # should access log all requests to a specific file or not
@@ -109,6 +109,7 @@ token:
   block-simultaneous-login: false # when set to true, Access will revoke User's session tokens when a new session token is created for the same user
   integration-secret-expiry-secs: 0 # Expiry period of the secret token. In seconds. Default: 0. 0 means never expires.
   user-invitation-token-expiry-secs: 2592000 # The user's invitation token expiry period. In seconds. Default: 30 days. 0 means never expires.
+  user-token-default-revocable: false # when set to true, all user token will be revocable by default, thus not working with circle of trust if expiry is higher than "revocable-expiry-threshold" on target
 task:
   revoke-expired-tokens-cron: "0 0 0/1 * * ?"  # cron expression defining when the "revoke expired token" job should run. disable the job by using "-". when the default value is set the seconds & minutes of the cron job are randomly generated.
   send-usage-cron: "0 0 23 * * ?"              # cron expression defining when the "send usage" job should run
@@ -134,6 +135,9 @@ cluster:
     maximum-future-time-diff-millis: 60000  # maximum difference between previous data timestamp and received data timestamp that is allowed 
   join:
     router-check-url-timeout-millis: 3000 # connection timeout (ms) for validating router responsiveness in url 'check-url'
+environments:
+  global-limit: 10 # Number of global environments allowed.
+  project-limit: 10 # Number of environments allowed to create in each project.
 project:
   cache:
     expire-after-write-seconds: 3600 # number of seconds Access waits before deleting an entry from the cache
@@ -222,3 +226,7 @@ max-config-files-to-retain: 10  # maximum number of configuration file versions 
 schema-version: 2         # Mark the configuration schema version. If it's not the latest version, a migration operation will be performed.
   do-not-import-this-file   # Ignore: a marker to prevent import of this file
 crt-grace-millis-between-writes: 5000 # Default: 5000
+events: # Settings for the JFrog Event client
+  enabled: true # Whether to enable the JFrog Event integration. Default: true.
+  connection-timeout-seconds: 60 # HTTP connection timeout (seconds). Default: 60.
+  token-rotation-seconds: 600 # Generated Access tokens lifetime, between 60 (= 1 minute) and 604800 (= 7 days). Default: 600.

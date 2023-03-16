@@ -1,0 +1,59 @@
+---
+federation:
+  inbound:
+    service-id-mapping:
+    - from: "jfrou@*"
+      to: "jfrou@01gsthm7tp2bnvtd7d61jbf1xj"
+    - from: "jfmd@*"
+      to: "jfmd@01gsthm8t26kx8e8vbe0qkdkse"
+    - from: "jfint@*"
+      to: "jfint@01gsthm3dxven60ez9sygz1r46"
+    - from: "jfevt@*"
+      to: "jfevt@01gsthm3dxven60ez9sygz1r46"
+    - from: "jfcon@*"
+      to: "jfcon@01gsthm3dxven60ez9sygz1r46"
+    - from: "jfrt@*"
+      to: "jfrt@01gsthmwbbqmed0tj72bw005ed"
+    - from: "jfob@*"
+      to: "jfob@01gsthmwbbqmed0tj72bw005ed"
+    - from: "jffe@*"
+      to: "jffe@000"
+licenses:
+- server-name: "0f1bc8ee4020"
+  key: "cHJvZHVjdHM6CiAgYXJ0aWZhY3Rvcnk6CiAgICBwcm9kdWN0OiBaWGh3YVhKbGN6b2dNakF5TXkw\r\
+    \nd015MHlNbFF3T0RveE5Ub3lNRm9LYVdRNklEZzFOREJsTkdVNUxXUm1ZMkl0TkRoallTMWhNemcy\r\
+    \nTFRKbU9XTTRPRGN5WW1NMk53cHZkMjVsY2pvZ1lteHZkMjFsQ25CeWIzQmxjblJwWlhNNkNpQWdk\r\
+    \nR1Z5YldWa1RHbGpaVzV6WlRvZ0oyWmhiSE5sSndvZ0lISmxaMmx6ZEhKaGRHbHZia3RsZVZSdmEy\r\
+    \nVnVPaUJsZVVveVdsaEphVTlwU1hsSmFYZHBaRWhzZDBscWIybFRiR1JWU1dsM2FWbFhlRzVKYW05\r\
+    \ncFZXeE5lVTVVV1dsTVEwcHlZVmRSYVU5cFNucE5hbHBTVGxSb2RVMVljRFZsYW1NeFUwWkNTbGxy\r\
+    \nVmpCamEwcFZURmRPVGxOSE5WSlRhbHBGWkVaYWNWUXpVak5sVlRsdlpWaFJkMGx1TUM1bGVVcHNa\r\
+    \nVWhSYVU5cFNqZFlRMHA1V2xka2NHTXpVbmxaV0ZKd1lqSTFURnBZYkdOSmFuQmpTV3BuTVU1cVJU\r\
+    \nQmFWMFpzVEZSQk1WcEVVWFJPUkVFMFRrTXdORTF0VFROTVZGWnJUMFJLYUUxRVNYaE9WMUV5V214\r\
+    \nM2FVeEdkMmxqYlZadVlWaE9NR050UmpCaFZ6bDFWa2M1Y2xwWE5WVmxXRUpzV0VOSk5saERTbEZT\r\
+    \nVmtwT1VWVTFSbFJzVW1OSmFYaGpTVzVhYkdOdVRuQmlNalZqU1dwdmVVeHFRWE5ZUTBwd1drZFdk\r\
+    \nV1JIYkRCbFZuZHBUMngzYVZsWVNqQmhWMXBvV1ROU2RtTnViR05KYVhoalNXMVNiR05IZUhabFZ6\r\
+    \nRnNZbTVTVldWWVFteFlRMGsyV0VOS2VscFhlRzFZTW1oMll6TlNiRnBHZDJsbVUwbHpTVzVPTVZs\r\
+    \ncFNUWkphbWN4VG1wRk1GcFhSbXhNVkVFeFdrUlJkRTVFUVRST1F6QTBUVzFOTTB4VVZtdFBSRXBv\r\
+    \nVFVSSmVFNVhVVEphYVVselNXNU9hbU5EU1RaSmJrcHNXakpzZW1SSFZubEphWGRwV1ZoV2EwbHFi\r\
+    \nMmxoYlZwcFlqQkJjVWxwZDJsaFdFNTZTV3B2YVdGdVFtaGxWVUYzVFZkak5XVlVRbnBOVjFvMVdr\r\
+    \nUlNkRTVxUWpCWmFteHJUVE5DTWsxWVl6VmplVWx6U1cxV05HTkRTVFpPUkdkNlRVUlpNVTE2WTNs\r\
+    \nTlEzZHBZVmRHTUVscWIzaE9hbU16VFVSVmVrNTZTWGRNUTBweFpFZHJhVTlwU1ROWlYxVjNUVVJX\r\
+    \nYUZwcE1EVlpWMGt4VEZSUmVrOVVaM1JQVkU1clRVTXdlVmxVU1RWWmFsVjVXbGRKTWxwdFJXbG1V\r\
+    \nUzVGYlZvdFNpMHpXak5xWTNRNFNuVnVRa3h1UkRrNGRURjJTMkp4TWs1Vk0xaHhaRXBET0ZkSGIy\r\
+    \ndzFjM2x4T1d0SmRrMUphekY1Yms1U1JsaDFlRlF6WlVOTFVXeHBNVzVsZW1KUGNsQjRjbkJvVTNO\r\
+    \ndWFVeElWbWhCTUZwSlRHWm5WMDQyYlcxalpURlhSM1pCU2t4MVlXOWZNa1JtYzNVMWNsaDRiREpK\r\
+    \nUkRsU1kzRnpjbEEwWm1sdFdIbEJTMEZUY0U5NVVqbHJlWEpXUzNoTU5EaHVPVFpXTmpCeVl5MHhj\r\
+    \nMUoyVWpnek1FNUpSekJ4UmxkeFdXOHhjREJVZFU1dWFrbHNjVGh6UWtFM05URnFZbVoyUjFORVYy\r\
+    \nUlpRbGRzYWtaVVgycEpSSE5hVEZwRmJHZGhUV3N0VERSelVWUnlOREp1ZDA0dGIzZFNPR3hYVFZo\r\
+    \nRGNXWlZSSFJOUm1SUWJIZHlZbkJVUVVGSVpXUkhha05uVEc5TFIzWkZWalF0UkdWcVZGaFJTWEEy\r\
+    \nWTFwS2FUSnFTRlZhVWxweFduVmFlRWhUYUZSb1MwRjZVbmwxUWxSaVpVcG5iMmN4VVZaU2NXdGZN\r\
+    \nbEVLYzJsbmJtRjBkWEpsT2lCdWRXeHNDblJ5YVdGc09pQjBjblZsQ25SNWNHVTZJRlJTU1VGTUNu\r\
+    \nWmhiR2xrUm5KdmJUb2dNakF5TXkwd01pMHlNbFF3T0RveE5Ub3lNUzR6TURaYUNnPT0KICAgIHNp\r\
+    \nZ25hdHVyZTogSEpmMzZWcElBdndHd1JNZ09aNGRJSVlBVkx4cjBabzRJM1B3bTN6V01vY2p4ajM0\r\
+    \nT0c5ajg5TjEyYWNmMEFpaHhUOEI5WnNXaVdUdjU3cEFnVncyQUVFQUVhS3hIY0FQMjIyMFB2Y0dq\r\
+    \naUg1UnQzYzVCL3BlL211NnBaYmE1eGREN0dreVFMdnlMeG5xTWJTNVkxbWhiT2NuUDMwbzJYeGQ1\r\
+    \nZHNRbmZjUUk1RzBqU0JXLzJqWldUb21YZWQ0UUp0OFpwTVV6K1VzY3lFbUdVTU5JRlp3a2lrZGRh\r\
+    \nTHRNRDl5R2QwNGFPcThnMW4zZmVVNWZJcjRITElPbHhSSW9EVHBBc1BrS21CRzFMQzRyQjRJWEVP\r\
+    \naWYwVUxqbVBZY04vQnU4R3REakZEcVZsRG1YZ0VGdFJtRm5XeU0xUHBKem1pZkMzaGZ3bVA3UXVk\r\
+    \nY255dGV6ZWlBPT0KdmVyc2lvbjogMQo=\r\n"
+schema-version: 2

@@ -1,2 +1,0 @@
-docker network inspect
-exit
