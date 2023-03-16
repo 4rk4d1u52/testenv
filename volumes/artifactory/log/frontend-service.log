@@ -1,18 +1,55 @@
-2023-03-16T11:56:45.048Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - frontend (jffe) service initialization started. Version: 1.55.1 Revision: 10000001 PID: 4481 Home: /opt/jfrog/artifactory
-2023-03-16T11:56:45.050Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - attempting pinging artifactory for 180 retires and 1.0s interval for total of 3 minutes
-2023-03-16T11:56:54.166Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory, attempt number 10
-2023-03-16T11:56:54.170Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory attempt number 10 failed with code : ECONNREFUSED
-2023-03-16T11:57:04.235Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory, attempt number 20
-2023-03-16T11:57:04.241Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory attempt number 20 failed with code : ECONNREFUSED
-2023-03-16T11:57:14.344Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory, attempt number 30
-2023-03-16T11:57:14.347Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory attempt number 30 failed with code : ECONNREFUSED
-2023-03-16T11:57:24.472Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory, attempt number 40
-2023-03-16T11:57:24.496Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory attempt number 40 failed with code : ECONNREFUSED
-2023-03-16T11:57:34.613Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory, attempt number 50
-2023-03-16T11:57:34.631Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory attempt number 50 failed with code : undefined
-2023-03-16T11:57:39.942Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - artifactory was pinged successfully
-2023-03-16T11:57:39.949Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - setting service id - jffe@01gsthm3dxven60ez9sygz1r46
-2023-03-16T11:57:40.315Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - Cluster join: Successfully joined the cluster
-2023-03-16T11:57:40.365Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - UI service successfully registered on router, serviceId: jffe@01gsthm3dxven60ez9sygz1r46
-2023-03-16T11:57:40.809Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - Recurring tasks started
-2023-03-16T11:57:41.427Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - frontend (jffe) service initialization completed in 58.31 seconds. Listening on port: port 8070
+2023-03-16T12:20:53.352Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - frontend (jffe) service initialization started. Version: 1.55.1 Revision: 10000001 PID: 4449 Home: /opt/jfrog/artifactory
+2023-03-16T12:20:53.354Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - attempting pinging artifactory for 180 retires and 1.0s interval for total of 3 minutes
+2023-03-16T12:21:02.491Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory, attempt number 10
+2023-03-16T12:21:02.496Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory attempt number 10 failed with code : ECONNREFUSED
+2023-03-16T12:21:12.592Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory, attempt number 20
+2023-03-16T12:21:12.602Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory attempt number 20 failed with code : ECONNREFUSED
+2023-03-16T12:21:22.717Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory, attempt number 30
+2023-03-16T12:21:22.723Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory attempt number 30 failed with code : ECONNREFUSED
+2023-03-16T12:21:32.774Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory, attempt number 40
+2023-03-16T12:21:32.778Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory attempt number 40 failed with code : ECONNREFUSED
+2023-03-16T12:21:42.852Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory, attempt number 50
+2023-03-16T12:21:42.856Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory attempt number 50 failed with code : ECONNREFUSED
+2023-03-16T12:21:52.949Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory, attempt number 60
+2023-03-16T12:21:52.955Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - pinging artifactory attempt number 60 failed with code : undefined
+2023-03-16T12:21:55.366Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - artifactory was pinged successfully
+2023-03-16T12:21:55.378Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - setting service id - jffe@01gsthm3dxven60ez9sygz1r46
+2023-03-16T12:21:55.956Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - Cluster join: Successfully joined the cluster
+2023-03-16T12:21:56.074Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - UI service successfully registered on router, serviceId: jffe@01gsthm3dxven60ez9sygz1r46
+2023-03-16T12:21:56.629Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - Recurring tasks started
+2023-03-16T12:21:57.189Z [jffe ] [[34M[INFO ][39M] [] [frontend-service.log] [main                ] - frontend (jffe) service initialization completed in 64.63 seconds. Listening on port: port 8070
+2023-03-16T12:24:58.696Z [jffe ] [[31M[1M[ERROR][22M[39M] [] [frontend-service.log] [main                ] - fetchAndUpdateCrowdConfigs failed with error Request failed with status code 401||  uncaughtException detected
+2023-03-16T12:24:58.697Z [jffe ] [[31M[1M[ERROR][22M[39M] [] [frontend-service.log] [main                ] - Error: fetchAndUpdateCrowdConfigs failed with error Request failed with status code 401
+    at /opt/jfrog/artifactory/app/frontend/bin/server/dist/webpack:/src/PlatformState/PlatformConfiguration.ts:140:12
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Promise.all (index 2)
+    at fetchAndUpdateAllConfigurations (/opt/jfrog/artifactory/app/frontend/bin/server/dist/webpack:/src/PlatformState/PlatformConfiguration.ts:165:3)
+2023-03-16T12:25:28.678Z [jffe ] [[31M[1M[ERROR][22M[39M] [] [frontend-service.log] [main                ] - fetchAndUpdateHttpSsoConfigs failed with error Request failed with status code 401||  uncaughtException detected
+2023-03-16T12:25:28.682Z [jffe ] [[31M[1M[ERROR][22M[39M] [] [frontend-service.log] [main                ] - Error: fetchAndUpdateHttpSsoConfigs failed with error Request failed with status code 401
+    at /opt/jfrog/artifactory/app/frontend/bin/server/dist/webpack:/src/PlatformState/PlatformConfiguration.ts:156:13
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Promise.all (index 6)
+    at fetchAndUpdateAllConfigurations (/opt/jfrog/artifactory/app/frontend/bin/server/dist/webpack:/src/PlatformState/PlatformConfiguration.ts:165:3)
+2023-03-16T12:25:58.681Z [jffe ] [[31M[1M[ERROR][22M[39M] [] [frontend-service.log] [main                ] - fetchAndUpdateIsRememberMeEnabled failed with error Request failed with status code 401||  uncaughtException detected
+2023-03-16T12:25:58.682Z [jffe ] [[31M[1M[ERROR][22M[39M] [] [frontend-service.log] [main                ] - Error: fetchAndUpdateIsRememberMeEnabled failed with error Request failed with status code 401
+    at /opt/jfrog/artifactory/app/frontend/bin/server/dist/webpack:/src/PlatformState/PlatformConfiguration.ts:151:11
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Promise.all (index 5)
+    at fetchAndUpdateAllConfigurations (/opt/jfrog/artifactory/app/frontend/bin/server/dist/webpack:/src/PlatformState/PlatformConfiguration.ts:165:3)
+2023-03-16T12:26:28.684Z [jffe ] [[31M[1M[ERROR][22M[39M] [] [frontend-service.log] [main                ] - fetchAndUpdateHttpSsoConfigs failed with error Request failed with status code 401||  uncaughtException detected
+2023-03-16T12:26:28.685Z [jffe ] [[31M[1M[ERROR][22M[39M] [] [frontend-service.log] [main                ] - Error: fetchAndUpdateHttpSsoConfigs failed with error Request failed with status code 401
+    at /opt/jfrog/artifactory/app/frontend/bin/server/dist/webpack:/src/PlatformState/PlatformConfiguration.ts:156:13
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Promise.all (index 6)
+    at fetchAndUpdateAllConfigurations (/opt/jfrog/artifactory/app/frontend/bin/server/dist/webpack:/src/PlatformState/PlatformConfiguration.ts:165:3)
+2023-03-16T12:26:58.676Z [jffe ] [[31M[1M[ERROR][22M[39M] [] [frontend-service.log] [main                ] - fetchAndUpdateAutoRedirectToSamlLogin failed with error Request failed with status code 401||  uncaughtException detected
+2023-03-16T12:26:58.676Z [jffe ] [[31M[1M[ERROR][22M[39M] [] [frontend-service.log] [main                ] - Error: fetchAndUpdateAutoRedirectToSamlLogin failed with error Request failed with status code 401
+    at /opt/jfrog/artifactory/app/frontend/bin/server/dist/webpack:/src/PlatformState/PlatformConfiguration.ts:148:12
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Promise.all (index 4)
+    at fetchAndUpdateAllConfigurations (/opt/jfrog/artifactory/app/frontend/bin/server/dist/webpack:/src/PlatformState/PlatformConfiguration.ts:165:3)

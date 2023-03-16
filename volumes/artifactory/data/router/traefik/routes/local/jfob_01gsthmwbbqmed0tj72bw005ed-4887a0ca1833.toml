@@ -1,0 +1,33 @@
+# This template is used to create routing rules for Traefik
+# References: https://doc.traefik.io/traefik/reference/dynamic-configuration/file/
+#             https://doc.traefik.io/traefik/routing/routers
+#             https://doc.traefik.io/traefik/routing/services
+
+[http.routers]
+
+  [http.routers.jfob_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833-0-rule0-internal]
+    entryPoints = ["internal"]
+    service = "jfob_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833-0"
+    priority = 719
+    rule = "PathPrefix(`/observability/`)"
+    middlewares = ["jfob_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833-0-0-strip"]
+
+  [http.routers.jfob_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833-0-rule0-external]
+    entryPoints = ["external"]
+    service = "jfob_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833-0"
+    priority = 719
+    rule = "PathPrefix(`/observability/`)"
+    middlewares = ["jfob_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833-0-0-strip","mtls"]
+
+[http.services]
+
+  [http.services.jfob_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833-0.loadBalancer]
+    passHostHeader = false
+
+    [[http.services.jfob_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833-0.loadBalancer.servers]]
+      url = "http://localhost:8036"
+
+[http.middlewares]
+
+  [http.middlewares.jfob_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833-0-0-strip.stripPrefix]
+    prefixes = ["/observability/"]

@@ -1340,3 +1340,298 @@ shared.security.joinKeyFile: file '/opt/jfrog/artifactory/var/etc/security/join.
 ###   All services started successfully in 71.654 seconds   ###
 ###############################################################
 2023-03-16T11:57:51.756Z [jfrou] [WARN ] [7da5be23eabe40a9] [external_topology.go:118      ] [main                ] [] - Topology updated because of the time schedule
+2023-03-16T12:20:49.180Z [jfrou] [INFO ] [08fefe081d61b088] [bootstrap.go:79               ] [main                ] [] - Router (jfrou) service initialization started. Version: 7.61.1-1 Revision: 2dff5a3182f55ae83ee87e23894cbdf09715c2c8 PID: 3918 Home: /opt/jfrog/artifactory
+2023-03-16T12:20:49.180Z [jfrou] [INFO ] [08fefe081d61b088] [bootstrap.go:82               ] [main                ] [] - JFrog Router IP: 172.21.0.2
+2023-03-16T12:20:49.181Z [jfrou] [INFO ] [08fefe081d61b088] [bootstrap.go:83               ] [main                ] [] - Effective configuration:
+access.http.port (Default Value): 8040
+artifactory.pid (Environment Variable: JF_ARTIFACTORY_PID): /opt/jfrog/artifactory/app/run/artifactory.pid
+artifactory.user (Environment Variable: JF_ARTIFACTORY_USER): artifactory
+configVersion (File): 1
+product.data.internal (Environment Variable: JF_PRODUCT_DATA_INTERNAL): /var/opt/jfrog/artifactory
+product.home (Environment Variable: JF_PRODUCT_HOME): /opt/jfrog/artifactory
+router.encryptSystemConfig (Default Value): true
+router.entrypoints.externalHost (Default Value): 
+router.entrypoints.externalMaxConcurrentStreams (Default Value): 500
+router.entrypoints.externalPort (Default Value): 8082
+router.entrypoints.grpcPort (Default Value): 8047
+router.entrypoints.internalMaxConcurrentStreams (Default Value): 500
+router.entrypoints.internalPort (Default Value): 8046
+router.entrypoints.traefikApiPort (Default Value): 8049
+router.httpclient.requestTimeoutSecs (Default Value): 30
+router.lifecycle.shutdown.entrypointsGraceTimeout (Default Value): 10s
+router.lifecycle.shutdown.internalJobsGraceTimeout (Default Value): 7s
+router.logging.application.caller (Default Value): false
+router.logging.application.console (Default Value): true
+router.logging.application.filePath (Default Value): router-service.log
+router.logging.application.format (Default Value): jftext
+router.logging.application.level (Default Value): info
+router.logging.application.rotation.compress (Default Value): true
+router.logging.application.rotation.keepLastDecompressed (Default Value): 1
+router.logging.application.rotation.maxAgeDays (Default Value): 0
+router.logging.application.rotation.maxFiles (Default Value): 10
+router.logging.application.rotation.maxSizeMb (Default Value): 25
+router.logging.consoleLog.format (Default Value): jftext
+router.logging.request.filePath (Default Value): router-request.log
+router.logging.request.forwardedForLogging.enabled (Default Value): false
+router.logging.request.forwardedForLogging.header (Default Value): X-Forwarded-For
+router.logging.request.rotation.compress (Default Value): true
+router.logging.request.rotation.keepLastDecompressed (Default Value): 1
+router.logging.request.rotation.maxAgeDays (Default Value): 0
+router.logging.request.rotation.maxFiles (Default Value): 10
+router.logging.request.rotation.maxSizeMb (Default Value): 100
+router.logging.request.tokenIdLoggingEnabled (Default Value): false
+router.logging.request.verbose (Default Value): false
+router.logging.traefik.caller (Default Value): false
+router.logging.traefik.console (Default Value): true
+router.logging.traefik.filePath (Default Value): router-traefik.log
+router.logging.traefik.format (Default Value): jftext
+router.logging.traefik.level (Default Value): info
+router.logging.traefik.rotation.compress (Default Value): true
+router.logging.traefik.rotation.keepLastDecompressed (Default Value): 1
+router.logging.traefik.rotation.maxAgeDays (Default Value): 0
+router.logging.traefik.rotation.maxFiles (Default Value): 10
+router.logging.traefik.rotation.maxSizeMb (Default Value): 25
+router.masterKeyRemoval.heartbeatCount (Default Value): 3
+router.masterKeyRemoval.intervalSecs (Default Value): 60
+router.masterKeyRemoval.timeoutSecs (Default Value): 600
+router.mtls.configCacheExpirationSecs (Default Value): 600
+router.multiTenant.cacheExpirySecs (Default Value): 86400
+router.multiTenant.cacheGcPeriodSecs (Default Value): 600
+router.probes.liveness.failOnLongFailingReadiness.enabled (Default Value): true
+router.probes.liveness.failOnLongFailingReadiness.failureDurationSecs (Default Value): 60
+router.profiling.enabled (Default Value): false
+router.proxy.httpUrl (Default Value): 
+router.proxy.httpsUrl (Default Value): 
+router.proxy.ignoredHosts (Default Value): []
+router.retry.enabled (Default Value): true
+router.security.cipherSuites (Default Value): TLS_RSA_WITH_AES_128_CBC_SHA,TLS_RSA_WITH_AES_256_CBC_SHA,TLS_RSA_WITH_AES_128_CBC_SHA256,TLS_RSA_WITH_AES_128_GCM_SHA256,TLS_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA,TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA,TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256,TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256,TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256,TLS_AES_128_GCM_SHA256,TLS_AES_256_GCM_SHA384,TLS_CHACHA20_POLY1305_SHA256,TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305,TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305
+router.serviceRegistry.insecure (Default Value): false
+router.serviceRegistry.requestTimeout (Default Value): 15s
+router.serviceRegistry.skipJoinConnectivityTest (Default Value): false
+router.serviceRegistry.url (Applicative Resolution): http://localhost:8040/access
+router.supportBundle.aggregationTimeout (Default Value): 1h0m0s
+router.topology.external.healthRequestTimeoutSecs (Default Value): 5
+router.topology.external.refresh.interval (Default Value): 3s
+router.topology.external.refresh.maxStaleHeartbeat (Default Value): 30s
+router.topology.local.healthCheck.healthyThreshold (Default Value): 2
+router.topology.local.healthCheck.interval (Default Value): 5s
+router.topology.local.healthCheck.requestTimeout (Default Value): 5s
+router.topology.local.healthCheck.unhealthyThreshold (Default Value): 2
+router.topology.local.ignorePersistedServices (Default Value): false
+router.topology.local.requiredServiceTypes (Environment Variable: JF_ROUTER_TOPOLOGY_LOCAL_REQUIREDSERVICETYPES): jfrt,jfac,jfmd,jffe,jfob,jfint,jfevt
+shared.database (File): <nil>
+shared.jfrogUrl (Default Value): 
+shared.logging.consoleLog.format (Default Value): shared.logging.consoleLog.format
+shared.logging.enableJsonConsoleLogAppenders (Default Value): false
+shared.multiTenant.cellId (Default Value): 
+shared.multiTenant.enabled (Default Value): false
+shared.multiTenant.tenantRegistryClient.caCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.cacheExpirationSecs (Default Value): 21600
+shared.multiTenant.tenantRegistryClient.clientCert (Default Value): 
+shared.multiTenant.tenantRegistryClient.clientCertKey (Default Value): *****
+shared.multiTenant.tenantRegistryClient.dialTimeoutSecs (Default Value): 10
+shared.multiTenant.tenantRegistryClient.endpoints (Default Value): []
+shared.multiTenant.tenantRegistryClient.requestTimeoutSecs (Default Value): 30
+shared.newrelic.appName (Default Value): 
+shared.newrelic.distributedTracerEnabled (Default Value): true
+shared.newrelic.enableDebugLog (Default Value): false
+shared.newrelic.enabled (Default Value): false
+shared.newrelic.licenseKey (Default Value): *****
+shared.node (File): <nil>
+shared.node.id (Environment Variable: JF_SHARED_NODE_ID): 4887a0ca1833
+shared.node.ip (Environment Variable: JF_SHARED_NODE_IP): 172.21.0.2
+shared.node.name (Environment Variable: JF_SHARED_NODE_NAME): 4887a0ca1833
+shared.node.port (Default Value): 0
+shared.node.tlsEnabled (Default Value): false
+shared.security (File): <nil>
+shared.security.bootstrapKeysReadTimeoutSecs (Default Value): 120
+shared.security.joinKeyFile (Default Value): etc/security/join.key
+shared.security.masterKeyExternal (Default Value): false
+shared.security.masterKeyFile (Default Value): etc/security/master.key
+system.yaml (Environment Variable: JF_SYSTEM_YAML): /opt/jfrog/artifactory/var/etc/system.yaml
+2023-03-16T12:20:49.184Z [jfrou] [INFO ] [08fefe081d61b088] [bootstrap.go:132              ] [main                ] [] - System configuration encryption report:
+shared.multiTenant.tenantRegistryClient.clientCertKey: does not exist in the config file
+shared.newrelic.licenseKey: does not exist in the config file
+shared.security.joinKeyFile: file '/opt/jfrog/artifactory/var/etc/security/join.key' - already encrypted
+2023-03-16T12:20:49.184Z [jfrou] [INFO ] [08fefe081d61b088] [bootstrap.go:87               ] [main                ] [] - JFrog Router Service ID: jfrou@01gsthm7tp2bnvtd7d61jbf1xj
+2023-03-16T12:20:49.184Z [jfrou] [INFO ] [08fefe081d61b088] [bootstrap.go:88               ] [main                ] [] - JFrog Router Node ID: 4887a0ca1833
+2023-03-16T12:20:49.202Z [jfrou] [INFO ] [08fefe081d61b088] [trusted.go:36                 ] [main                ] [] - System cert pool contents were loaded as trusted CAs for TLS communication
+2023-03-16T12:20:49.203Z [jfrou] [INFO ] [08fefe081d61b088] [trusted.go:56                 ] [main                ] [] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2023-03-16T12:20:49.204Z [jfrou] [INFO ] [08fefe081d61b088] [trusted.go:36                 ] [main                ] [] - System cert pool contents were loaded as trusted CAs for TLS communication
+2023-03-16T12:20:49.204Z [jfrou] [INFO ] [08fefe081d61b088] [trusted.go:56                 ] [main                ] [] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2023-03-16T12:20:51.181Z [jfrou] [INFO ] [08fefe081d61b088] [config_holder.go:110          ] [main                ] [] - Configuration update detected
+2023-03-16T12:20:53.595Z [jfrou] [INFO ] [08fefe081d61b088] [join_executor.go:170          ] [main                ] [] - Cluster join: Retry 5: Service registry ping failed, will retry. Error: Get "http://localhost:8040/access/api/v1/system/ping": dial tcp 127.0.0.1:8040: connect: connection refused
+2023-03-16T12:21:41.117Z [jfrou] [INFO ] [08fefe081d61b088] [join_executor.go:115          ] [main                ] [] - Cluster join: Trying to rejoin the cluster http://localhost:8040/access
+2023-03-16T12:21:42.783Z [jfrou] [INFO ] [08fefe081d61b088] [join_executor.go:210          ] [main                ] [] - Cluster join: Successfully joined the cluster
+2023-03-16T12:21:42.785Z [jfrou] [INFO ] [08fefe081d61b088] [trusted.go:36                 ] [main                ] [] - System cert pool contents were loaded as trusted CAs for TLS communication
+2023-03-16T12:21:42.787Z [jfrou] [INFO ] [08fefe081d61b088] [trusted.go:56                 ] [main                ] [] - Following certificates were successfully loaded as trusted CAs for TLS communication:
+[/opt/jfrog/artifactory/var/data/router/keys/trusted/access-root-ca.crt]
+2023-03-16T12:21:42.910Z [jfrou] [INFO ] [08fefe081d61b088] [mtls_client.go:222            ] [main                ] [] - Detected mTLS configuration change, resetting users and certificates cache expiry to 1m40s
+2023-03-16T12:21:42.929Z [jfrou] [INFO ] [08fefe081d61b088] [server_handler.go:65          ] [main                ] [] - gRPC server listening on: localhost:8047
+2023-03-16T12:21:42.938Z [jfrou] [INFO ] [08fefe081d61b088] [registry_handler.go:83        ] [main                ] [] - Persisted local services: []
+2023-03-16T12:21:42.962Z [jfrou] [INFO ] [08fefe081d61b088] [handler.go:156                ] [main                ] [] - Traefik server started on ports: 8082 (external), 8046 (internal), 8049 (Traefik API)
+2023-03-16T12:21:43.050Z [jfrou] [INFO ] [08fefe081d61b088] [local_topology.go:115         ] [main                ] [] - Required service types: [jfrt jfac jfmd jffe jfob jfint jfevt]
+2023-03-16T12:21:43.059Z [jfrou] [INFO ] [08fefe081d61b088] [main.go:52                    ] [main                ] [] - Router (jfrou) service initialization completed in 53.886 seconds. Listening on port: 8082
+2023-03-16T12:21:43.069Z [jfrou] [WARN ] [1bc9aa7d0f7b7c56] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jfrt jfac jfmd jffe jfob jfint jfevt]
+2023-03-16T12:21:43.070Z [jfrou] [WARN ] [1bc9aa7d0f7b7c56] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:21:43.195Z [jfrou] [WARN ] [0ffda847c9776bf4] [external_topology.go:168      ] [main                ] [] - Restart needed, the node has no registered services
+2023-03-16T12:21:45.680Z [jfrou] [WARN ] [06dd3cda87dc2bb2] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jfrt jfac jfmd jffe jfob jfint jfevt]
+2023-03-16T12:21:46.088Z [jfrou] [WARN ] [18f45338c58b3257] [external_topology.go:168      ] [main                ] [] - Restart needed, the node has no registered services
+2023-03-16T12:21:48.061Z [jfrou] [WARN ] [607c7c62460cc445] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jfrt jfac jfmd jffe jfob jfint jfevt]
+2023-03-16T12:21:48.061Z [jfrou] [WARN ] [607c7c62460cc445] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:21:49.076Z [jfrou] [WARN ] [7becb6930fef9c6b] [external_topology.go:168      ] [main                ] [] - Restart needed, the node has no registered services
+2023-03-16T12:21:49.909Z [jfrou] [WARN ] [23d3d1d1048a94e4] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jfrt jfmd jffe jfob jfint jfevt]
+2023-03-16T12:21:50.021Z [jfrou] [WARN ] [0b8ce7247f2c331b] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jfrt jfmd jffe jfob jfint jfevt]
+2023-03-16T12:21:50.239Z [jfrou] [WARN ] [7024c5834c382408] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jfrt jfmd jffe jfob jfint jfevt]
+2023-03-16T12:21:50.643Z [jfrou] [WARN ] [401ff60475657a61] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jfrt jffe jfob jfevt]
+2023-03-16T12:21:50.711Z [jfrou] [WARN ] [06dd3cda87dc2bb2] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jfrt jffe jfob jfevt]
+2023-03-16T12:21:51.447Z [jfrou] [WARN ] [2b6e88deb2a5ab69] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jfrt jffe jfob]
+2023-03-16T12:21:52.452Z [jfrou] [WARN ] [0cf72605ff62eef7] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jffe jfob]
+2023-03-16T12:21:53.067Z [jfrou] [ERROR] [05231938997f13b1] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:21:53.119Z [jfrou] [WARN ] [05231938997f13b1] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jffe jfob]
+2023-03-16T12:21:53.119Z [jfrou] [WARN ] [05231938997f13b1] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:21:53.455Z [jfrou] [WARN ] [5f148d9a760732e1] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jffe jfob]
+2023-03-16T12:21:54.459Z [jfrou] [WARN ] [1966f81f2d3bf094] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jffe jfob]
+2023-03-16T12:21:55.463Z [jfrou] [WARN ] [1e08b59c26135261] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jffe jfob]
+2023-03-16T12:21:55.724Z [jfrou] [WARN ] [06dd3cda87dc2bb2] [local_topology_helper.go:68   ] [main                ] [] - Missing required services: [jffe jfob]
+2023-03-16T12:21:58.158Z [jfrou] [WARN ] [55c0d3c38b75d7e6] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:22:03.076Z [jfrou] [INFO ] [41332d90b28aaa4b] [local_topology.go:288         ] [main                ] [] - 
+###############################################################
+###   All services started successfully in 73.902 seconds   ###
+###############################################################
+2023-03-16T12:22:04.104Z [jfrou] [WARN ] [0790a07cf67947f8] [external_topology.go:118      ] [main                ] [] - Topology updated because of the time schedule
+2023-03-16T12:24:46.178Z [jfrou] [ERROR] [1f3be7e91b476d9d] [routing_handler.go:329        ] [main                ] [] - Failed reading current external routes from file: /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
+2023-03-16T12:24:46.180Z [jfrou] [ERROR] [1f3be7e91b476d9d] [external_topology.go:145      ] [main                ] [] - Failed updating external topology routing rules: failed performing atomic write to file: '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'; failed renaming file '/tmp/router3506611869' to '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'. error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
+2023-03-16T12:24:49.181Z [jfrou] [ERROR] [69038036de6b178c] [routing_handler.go:329        ] [main                ] [] - Failed reading current external routes from file: /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
+2023-03-16T12:24:49.181Z [jfrou] [ERROR] [69038036de6b178c] [external_topology.go:145      ] [main                ] [] - Failed updating external topology routing rules: failed performing atomic write to file: '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'; failed renaming file '/tmp/router2571888631' to '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'. error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
+2023-03-16T12:24:52.181Z [jfrou] [ERROR] [527a9a953f040936] [routing_handler.go:329        ] [main                ] [] - Failed reading current external routes from file: /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
+2023-03-16T12:24:52.182Z [jfrou] [ERROR] [527a9a953f040936] [external_topology.go:145      ] [main                ] [] - Failed updating external topology routing rules: failed performing atomic write to file: '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'; failed renaming file '/tmp/router2365940804' to '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'. error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
+2023-03-16T12:24:55.184Z [jfrou] [ERROR] [1987cb0c3babbc73] [routing_handler.go:329        ] [main                ] [] - Failed reading current external routes from file: /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
+2023-03-16T12:24:55.185Z [jfrou] [ERROR] [1987cb0c3babbc73] [external_topology.go:145      ] [main                ] [] - Failed updating external topology routing rules: failed performing atomic write to file: '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'; failed renaming file '/tmp/router1346731729' to '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'. error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
+2023-03-16T12:24:58.181Z [jfrou] [ERROR] [34c8ecba2e5ab026] [routing_handler.go:329        ] [main                ] [] - Failed reading current external routes from file: /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
+2023-03-16T12:24:58.182Z [jfrou] [ERROR] [34c8ecba2e5ab026] [external_topology.go:145      ] [main                ] [] - Failed updating external topology routing rules: failed performing atomic write to file: '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'; failed renaming file '/tmp/router1084602530' to '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'. error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
+2023-03-16T12:24:58.213Z [jfrou] [ERROR] [518b3a1c7b407be6] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:25:01.181Z [jfrou] [ERROR] [6d33226224ae376a] [routing_handler.go:329        ] [main                ] [] - Failed reading current external routes from file: /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
+2023-03-16T12:25:01.190Z [jfrou] [ERROR] [6d33226224ae376a] [external_topology.go:145      ] [main                ] [] - Failed updating external topology routing rules: failed performing atomic write to file: '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'; failed renaming file '/tmp/router1557525175' to '/opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml'. error: open /opt/jfrog/artifactory/var/data/router/traefik/routes/external/external-routes.toml: permission denied
+2023-03-16T12:25:03.160Z [jfrou] [ERROR] [7b1803dc33d538b4] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:25:03.160Z [jfrou] [WARN ] [7b1803dc33d538b4] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:25:03.161Z [jfrou] [ERROR] [7b1803dc33d538b4] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:25:08.182Z [jfrou] [ERROR] [2b94eb1a7f015ecc] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:25:08.183Z [jfrou] [WARN ] [2b94eb1a7f015ecc] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:25:08.184Z [jfrou] [ERROR] [2b94eb1a7f015ecc] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:25:13.208Z [jfrou] [ERROR] [7c1cb87efcf0b7e5] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:25:13.208Z [jfrou] [WARN ] [7c1cb87efcf0b7e5] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:25:13.208Z [jfrou] [ERROR] [7c1cb87efcf0b7e5] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:25:18.201Z [jfrou] [ERROR] [2fa7f184d66ab4cc] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:25:18.202Z [jfrou] [WARN ] [2fa7f184d66ab4cc] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:25:18.202Z [jfrou] [ERROR] [2fa7f184d66ab4cc] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:25:23.202Z [jfrou] [ERROR] [6781ebe9cc46a1a0] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:25:23.202Z [jfrou] [WARN ] [6781ebe9cc46a1a0] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:25:23.203Z [jfrou] [ERROR] [6781ebe9cc46a1a0] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:25:28.204Z [jfrou] [ERROR] [01cf872c824446d8] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:25:28.205Z [jfrou] [WARN ] [01cf872c824446d8] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:25:28.205Z [jfrou] [ERROR] [01cf872c824446d8] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:25:33.203Z [jfrou] [ERROR] [43b9d0fb1816fa38] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:25:33.204Z [jfrou] [WARN ] [43b9d0fb1816fa38] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:25:33.204Z [jfrou] [ERROR] [43b9d0fb1816fa38] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:25:38.208Z [jfrou] [ERROR] [71e264bd9af44746] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:25:38.209Z [jfrou] [WARN ] [71e264bd9af44746] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:25:38.209Z [jfrou] [ERROR] [71e264bd9af44746] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:25:43.208Z [jfrou] [ERROR] [53931fd2276eff9f] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:25:43.208Z [jfrou] [WARN ] [53931fd2276eff9f] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:25:43.209Z [jfrou] [ERROR] [53931fd2276eff9f] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:25:48.213Z [jfrou] [ERROR] [41f04b8975376bd2] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:25:48.213Z [jfrou] [WARN ] [41f04b8975376bd2] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:25:48.213Z [jfrou] [ERROR] [41f04b8975376bd2] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:25:53.211Z [jfrou] [ERROR] [79b91276413aa17d] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:25:53.212Z [jfrou] [WARN ] [79b91276413aa17d] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:25:53.213Z [jfrou] [ERROR] [79b91276413aa17d] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:25:58.221Z [jfrou] [ERROR] [4497d3a2d6489cdb] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:25:58.221Z [jfrou] [WARN ] [4497d3a2d6489cdb] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:25:58.222Z [jfrou] [ERROR] [4497d3a2d6489cdb] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:26:03.211Z [jfrou] [ERROR] [31ad8330802865f3] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:26:03.212Z [jfrou] [WARN ] [31ad8330802865f3] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:26:03.212Z [jfrou] [ERROR] [31ad8330802865f3] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:26:08.218Z [jfrou] [ERROR] [638ba4fba8d58bff] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:26:08.218Z [jfrou] [WARN ] [638ba4fba8d58bff] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:26:08.219Z [jfrou] [ERROR] [638ba4fba8d58bff] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:26:13.218Z [jfrou] [ERROR] [08c56dce9920e48b] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:26:13.218Z [jfrou] [WARN ] [08c56dce9920e48b] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:26:13.218Z [jfrou] [ERROR] [08c56dce9920e48b] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:26:18.219Z [jfrou] [ERROR] [7e18ffa9b2e9c4e9] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:26:18.219Z [jfrou] [WARN ] [7e18ffa9b2e9c4e9] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:26:18.220Z [jfrou] [ERROR] [7e18ffa9b2e9c4e9] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:26:23.225Z [jfrou] [ERROR] [74b5e16ff2e39c1a] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:26:23.225Z [jfrou] [WARN ] [74b5e16ff2e39c1a] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:26:23.225Z [jfrou] [ERROR] [74b5e16ff2e39c1a] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:26:28.226Z [jfrou] [ERROR] [3b159e4bd6ce1f79] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:26:28.226Z [jfrou] [WARN ] [3b159e4bd6ce1f79] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:26:28.227Z [jfrou] [ERROR] [3b159e4bd6ce1f79] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:26:33.231Z [jfrou] [ERROR] [1286cbaf993919d0] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:26:33.232Z [jfrou] [WARN ] [1286cbaf993919d0] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:26:33.232Z [jfrou] [ERROR] [1286cbaf993919d0] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:26:38.233Z [jfrou] [ERROR] [41fd9c43c54266ea] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:26:38.233Z [jfrou] [WARN ] [41fd9c43c54266ea] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:26:38.234Z [jfrou] [ERROR] [41fd9c43c54266ea] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:26:43.239Z [jfrou] [ERROR] [2f33c6f04c243b24] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:26:43.243Z [jfrou] [WARN ] [2f33c6f04c243b24] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:26:43.243Z [jfrou] [ERROR] [2f33c6f04c243b24] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:26:48.242Z [jfrou] [ERROR] [61f618c282cd64d9] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:26:48.242Z [jfrou] [WARN ] [61f618c282cd64d9] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:26:48.243Z [jfrou] [ERROR] [61f618c282cd64d9] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:26:53.241Z [jfrou] [ERROR] [204c104d60f4661a] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:26:53.248Z [jfrou] [WARN ] [204c104d60f4661a] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:26:53.249Z [jfrou] [ERROR] [204c104d60f4661a] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:26:58.244Z [jfrou] [ERROR] [2b0e9c5f80263ee1] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:26:58.245Z [jfrou] [WARN ] [2b0e9c5f80263ee1] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:26:58.245Z [jfrou] [ERROR] [2b0e9c5f80263ee1] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:27:03.242Z [jfrou] [ERROR] [707ac9fcce8d7725] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:27:03.250Z [jfrou] [WARN ] [707ac9fcce8d7725] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:27:03.251Z [jfrou] [ERROR] [707ac9fcce8d7725] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:27:08.243Z [jfrou] [ERROR] [4a737fd8ff609f0d] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:27:08.243Z [jfrou] [WARN ] [4a737fd8ff609f0d] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:27:08.243Z [jfrou] [ERROR] [4a737fd8ff609f0d] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:27:13.247Z [jfrou] [ERROR] [25d6d396292e3d1e] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:27:13.248Z [jfrou] [WARN ] [25d6d396292e3d1e] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:27:13.248Z [jfrou] [ERROR] [25d6d396292e3d1e] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:27:18.244Z [jfrou] [ERROR] [1d1b31f94dd7201e] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:27:18.244Z [jfrou] [WARN ] [1d1b31f94dd7201e] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:27:18.244Z [jfrou] [ERROR] [1d1b31f94dd7201e] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:27:23.245Z [jfrou] [ERROR] [3d13e9ac6d14bdf9] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:27:23.246Z [jfrou] [WARN ] [3d13e9ac6d14bdf9] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:27:23.246Z [jfrou] [ERROR] [3d13e9ac6d14bdf9] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:27:28.248Z [jfrou] [ERROR] [2344e1b14241b7a0] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:27:28.248Z [jfrou] [WARN ] [2344e1b14241b7a0] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:27:28.248Z [jfrou] [ERROR] [2344e1b14241b7a0] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:27:33.246Z [jfrou] [ERROR] [431b93770215f43d] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:27:33.248Z [jfrou] [WARN ] [431b93770215f43d] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:27:33.248Z [jfrou] [ERROR] [431b93770215f43d] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:27:38.245Z [jfrou] [ERROR] [667709a0688d2861] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:27:38.246Z [jfrou] [WARN ] [667709a0688d2861] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:27:38.247Z [jfrou] [ERROR] [667709a0688d2861] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:27:43.246Z [jfrou] [ERROR] [7856cce6acf11507] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:27:43.246Z [jfrou] [WARN ] [7856cce6acf11507] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:27:43.247Z [jfrou] [ERROR] [7856cce6acf11507] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:27:48.247Z [jfrou] [ERROR] [0862af16faadb38f] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:27:48.248Z [jfrou] [WARN ] [0862af16faadb38f] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:27:48.249Z [jfrou] [ERROR] [0862af16faadb38f] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:27:53.247Z [jfrou] [ERROR] [1ba5d1baa488e3d9] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:27:53.248Z [jfrou] [WARN ] [1ba5d1baa488e3d9] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:27:53.248Z [jfrou] [ERROR] [1ba5d1baa488e3d9] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:27:58.250Z [jfrou] [ERROR] [3cf3016e1ef3d90a] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:27:58.250Z [jfrou] [WARN ] [3cf3016e1ef3d90a] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:27:58.250Z [jfrou] [ERROR] [3cf3016e1ef3d90a] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:28:03.250Z [jfrou] [ERROR] [4ce61fc87ed87e08] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:28:03.250Z [jfrou] [WARN ] [4ce61fc87ed87e08] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:28:03.250Z [jfrou] [ERROR] [4ce61fc87ed87e08] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:28:08.258Z [jfrou] [ERROR] [543d21f6437631ec] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:28:08.259Z [jfrou] [WARN ] [543d21f6437631ec] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:28:08.259Z [jfrou] [ERROR] [543d21f6437631ec] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:28:13.257Z [jfrou] [ERROR] [08ef338ca203ed76] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:28:13.258Z [jfrou] [WARN ] [08ef338ca203ed76] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:28:13.259Z [jfrou] [ERROR] [08ef338ca203ed76] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services
+2023-03-16T12:28:18.256Z [jfrou] [ERROR] [6fef965a6dc514e0] [healthcheck.go:71             ] [main                ] [] - Checking health of service 'jfrt_01gsthmwbbqmed0tj72bw005ed-4887a0ca1833' using URL 'http://localhost:8091/artifactory/api/v1/system/readiness' returned unexpected response status: 503
+2023-03-16T12:28:18.257Z [jfrou] [WARN ] [6fef965a6dc514e0] [local_topology.go:274         ] [main                ] [] - Readiness test failed with the following error: "required node services are missing or unhealthy"
+2023-03-16T12:28:18.257Z [jfrou] [ERROR] [6fef965a6dc514e0] [local_topology.go:276         ] [main                ] [] - Failed creating unhealthy node routing rule, incoming requests will be routed to local services

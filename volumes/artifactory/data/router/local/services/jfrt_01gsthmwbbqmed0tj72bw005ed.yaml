@@ -17,5 +17,5 @@ endpoints:
 healthcheckendpoint:
     path: /artifactory/api/v1/system/readiness
     port: 8091
-nodeid: a7c69def83ee
+nodeid: 4887a0ca1833
 serviceid: jfrt@01gsthmwbbqmed0tj72bw005ed

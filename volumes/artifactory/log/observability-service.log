@@ -536,3 +536,82 @@
 2023-03-16T11:57:41.375Z [jfob ] [INFO ] [5e449178d30eae72] [shipping_service.go:233       ] [main                ] [] - Product name resolved as : artifactory [shipping_service]
 2023-03-16T11:57:41.375Z [jfob ] [INFO ] [5e449178d30eae72] [shipping_service.go:256       ] [main                ] [] - Log shipping Duration Interval 1m0s and Consumption Duration Interval 1m0s  [shipping_service]
 2023-03-16T11:57:41.385Z [jfob ] [INFO ] [5e449178d30eae72] [application.go:144            ] [main                ] [] - JFrog Observability (jfob) service initialization completed in 60.812 seconds. HTTP server listening on 127.0.0.1:8036.  [application]
+2023-03-16T12:20:50.565Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:229              ] [main                ] [] - Resolving service Id... [startup]
+2023-03-16T12:21:45.701Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:286              ] [main                ] [] - Platform services enabled false [startup]
+2023-03-16T12:21:45.705Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:293              ] [main                ] [] - Num of router services : 0 [startup]
+2023-03-16T12:21:45.705Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:294              ] [main                ] [] - Services registered with router : [] [startup]
+2023-03-16T12:21:45.706Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:245              ] [main                ] [] - Unable to find parent service using router health, trying again... [startup]
+2023-03-16T12:21:50.712Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:286              ] [main                ] [] - Platform services enabled false [startup]
+2023-03-16T12:21:50.712Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:293              ] [main                ] [] - Num of router services : 3 [startup]
+2023-03-16T12:21:50.712Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:294              ] [main                ] [] - Services registered with router : [{ServiceId:jfac@01gsthm3dxven60ez9sygz1r46} {ServiceId:jfint@01gsthm3dxven60ez9sygz1r46} {ServiceId:jfmd@01gsthm8t26kx8e8vbe0qkdkse}] [startup]
+2023-03-16T12:21:50.712Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:322              ] [main                ] [] - Obtained parent instance Id:  [startup]
+2023-03-16T12:21:50.713Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:322              ] [main                ] [] - Obtained parent instance Id:  [startup]
+2023-03-16T12:21:50.713Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:322              ] [main                ] [] - Obtained parent instance Id:  [startup]
+2023-03-16T12:21:50.713Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:245              ] [main                ] [] - Unable to find parent service using router health, trying again... [startup]
+2023-03-16T12:21:55.728Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:286              ] [main                ] [] - Platform services enabled false [startup]
+2023-03-16T12:21:55.729Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:293              ] [main                ] [] - Num of router services : 5 [startup]
+2023-03-16T12:21:55.729Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:294              ] [main                ] [] - Services registered with router : [{ServiceId:jfac@01gsthm3dxven60ez9sygz1r46} {ServiceId:jfevt@01gsthm3dxven60ez9sygz1r46} {ServiceId:jfint@01gsthm3dxven60ez9sygz1r46} {ServiceId:jfmd@01gsthm8t26kx8e8vbe0qkdkse} {ServiceId:jfrt@01gsthmwbbqmed0tj72bw005ed}] [startup]
+2023-03-16T12:21:55.729Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:322              ] [main                ] [] - Obtained parent instance Id:  [startup]
+2023-03-16T12:21:55.729Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:322              ] [main                ] [] - Obtained parent instance Id:  [startup]
+2023-03-16T12:21:55.729Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:322              ] [main                ] [] - Obtained parent instance Id:  [startup]
+2023-03-16T12:21:55.729Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:322              ] [main                ] [] - Obtained parent instance Id:  [startup]
+2023-03-16T12:21:55.729Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:322              ] [main                ] [] - Obtained parent instance Id: 01gsthmwbbqmed0tj72bw005ed [startup]
+2023-03-16T12:21:55.732Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:90               ] [main                ] [] - JFrog Observability Service ID: jfob@01gsthmwbbqmed0tj72bw005ed [startup]
+2023-03-16T12:21:55.734Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:91               ] [main                ] [] - JFrog Observability Node ID   : 4887a0ca1833 [startup]
+2023-03-16T12:21:55.734Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [bootstrap.go:92               ] [main                ] [] - JFrog Observability Node IP   : 172.21.0.2 [startup]
+2023-03-16T12:21:55.740Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [application.go:84             ] [main                ] [] - Is service running as Multi tenant? false [application]
+2023-03-16T12:21:55.851Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [access_join.go:48             ] [main                ] [] - Cluster join: Successfully joined the cluster [application]
+2023-03-16T12:21:55.852Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [access_join.go:48             ] [main                ] [] - Cluster join: executing Router register at: localhost:8046 for service id jfob@01gsthmwbbqmed0tj72bw005ed [application]
+2023-03-16T12:21:55.964Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [application.go:144            ] [main                ] [] - JFrog Observability (jfob) service initialization completed in 65.406 seconds. HTTP server listening on 127.0.0.1:8036.  [application]
+2023-03-16T12:21:55.965Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [shipping_service.go:233       ] [main                ] [] - Product name resolved as : artifactory [shipping_service]
+2023-03-16T12:21:55.972Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [shipping_service.go:256       ] [main                ] [] - Log shipping Duration Interval 1m0s and Consumption Duration Interval 1m0s  [shipping_service]
+2023-03-16T12:24:56.009Z [jfob ] [ERROR] [06dd3cda87dc2bb2] [artifactory_client.go:210     ] [main                ] [] - Fetch base URL from Artifactory returned: 401 {
+  "errors" : [ {
+    "status" : 401,
+    "message" : "Failed to verify token."
+  } ]
+} [artifactory_client]
+2023-03-16T12:24:56.010Z [jfob ] [WARN ] [06dd3cda87dc2bb2] [shipping_service.go:151       ] [main                ] [] - Failed to get Artifactory version : failed to fetch base URL from Artifactory  [shipping_service]
+2023-03-16T12:24:56.010Z [jfob ] [WARN ] [06dd3cda87dc2bb2] [shipping_service.go:284       ] [main                ] [] - Error response while getting artifactory version, retrying to fetch artifactory version : 0 [shipping_service]
+2023-03-16T12:24:56.031Z [jfob ] [ERROR] [06dd3cda87dc2bb2] [artifactory_client.go:210     ] [main                ] [] - Fetch base URL from Artifactory returned: 401 {
+  "errors" : [ {
+    "status" : 401,
+    "message" : "Failed to verify token."
+  } ]
+} [artifactory_client]
+2023-03-16T12:24:56.031Z [jfob ] [WARN ] [06dd3cda87dc2bb2] [shipping_service.go:151       ] [main                ] [] - Failed to get Artifactory version : failed to fetch base URL from Artifactory  [shipping_service]
+2023-03-16T12:24:56.031Z [jfob ] [WARN ] [06dd3cda87dc2bb2] [shipping_service.go:308       ] [main                ] [] - Error response while getting artifactory version, retrying to fetch artifactory version: 0 [shipping_service]
+2023-03-16T12:25:55.993Z [jfob ] [ERROR] [06dd3cda87dc2bb2] [artifactory_client.go:210     ] [main                ] [] - Fetch base URL from Artifactory returned: 401 {
+  "errors" : [ {
+    "status" : 401,
+    "message" : "Failed to verify token."
+  } ]
+} [artifactory_client]
+2023-03-16T12:25:55.993Z [jfob ] [WARN ] [06dd3cda87dc2bb2] [shipping_service.go:151       ] [main                ] [] - Failed to get Artifactory version : failed to fetch base URL from Artifactory  [shipping_service]
+2023-03-16T12:25:55.993Z [jfob ] [WARN ] [06dd3cda87dc2bb2] [shipping_service.go:284       ] [main                ] [] - Error response while getting artifactory version, retrying to fetch artifactory version : 1 [shipping_service]
+2023-03-16T12:25:56.015Z [jfob ] [ERROR] [06dd3cda87dc2bb2] [artifactory_client.go:210     ] [main                ] [] - Fetch base URL from Artifactory returned: 401 {
+  "errors" : [ {
+    "status" : 401,
+    "message" : "Failed to verify token."
+  } ]
+} [artifactory_client]
+2023-03-16T12:25:56.015Z [jfob ] [WARN ] [06dd3cda87dc2bb2] [shipping_service.go:151       ] [main                ] [] - Failed to get Artifactory version : failed to fetch base URL from Artifactory  [shipping_service]
+2023-03-16T12:25:56.015Z [jfob ] [WARN ] [06dd3cda87dc2bb2] [shipping_service.go:308       ] [main                ] [] - Error response while getting artifactory version, retrying to fetch artifactory version: 1 [shipping_service]
+2023-03-16T12:26:55.984Z [jfob ] [ERROR] [06dd3cda87dc2bb2] [artifactory_client.go:210     ] [main                ] [] - Fetch base URL from Artifactory returned: 401 {
+  "errors" : [ {
+    "status" : 401,
+    "message" : "Failed to verify token."
+  } ]
+} [artifactory_client]
+2023-03-16T12:26:55.984Z [jfob ] [WARN ] [06dd3cda87dc2bb2] [shipping_service.go:151       ] [main                ] [] - Failed to get Artifactory version : failed to fetch base URL from Artifactory  [shipping_service]
+2023-03-16T12:26:55.984Z [jfob ] [WARN ] [06dd3cda87dc2bb2] [shipping_service.go:284       ] [main                ] [] - Error response while getting artifactory version, retrying to fetch artifactory version : 2 [shipping_service]
+2023-03-16T12:26:56.005Z [jfob ] [ERROR] [06dd3cda87dc2bb2] [artifactory_client.go:210     ] [main                ] [] - Fetch base URL from Artifactory returned: 401 {
+  "errors" : [ {
+    "status" : 401,
+    "message" : "Failed to verify token."
+  } ]
+} [artifactory_client]
+2023-03-16T12:26:56.005Z [jfob ] [WARN ] [06dd3cda87dc2bb2] [shipping_service.go:151       ] [main                ] [] - Failed to get Artifactory version : failed to fetch base URL from Artifactory  [shipping_service]
+2023-03-16T12:26:56.005Z [jfob ] [WARN ] [06dd3cda87dc2bb2] [shipping_service.go:308       ] [main                ] [] - Error response while getting artifactory version, retrying to fetch artifactory version: 2 [shipping_service]
+2023-03-16T12:27:56.004Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [shipping_service.go:298       ] [main                ] [] - Is Observability compatible with artifactory version? true. Continuing with other log shipping checks [shipping_service]
+2023-03-16T12:27:56.037Z [jfob ] [INFO ] [06dd3cda87dc2bb2] [shipping_service.go:321       ] [main                ] [] - Is Observability compatible with artifactory version? true. Continuing with other usage shipping checks [shipping_service]
