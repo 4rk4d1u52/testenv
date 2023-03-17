@@ -11,6 +11,7 @@ services:
       - ../volumes/jenkins:/var/jenkins_home
       networks:
         - docker_network
+
     ubuntu_slave:
       depends_on:
         - 'jenkins'     
@@ -21,7 +22,8 @@ services:
         context: ../dockerfiles/slave
       command: java -jar agent.jar -jnlpUrl http://192.168.44.44:8880/computer/Slave/jenkins-agent.jnlp -secret bafef9edc55bf0b6598254cbdbfae95b6ecd645e2a6b86739fffba2f998a385e -workDir "/home/"
       networks:
-        - docker_network       
+        - docker_network
+
     selenium_hub:
       image: selenium/hub
       container_name: selenium-hubcompmose
@@ -29,7 +31,8 @@ services:
         - 4444:4444
       networks:
         - docker_network
-    selenium_node:
+
+    firefox:
       depends_on:
         - selenium_hub
       build:
@@ -40,6 +43,7 @@ services:
         - HUB_PORT=4444
       networks:
         - docker_network
+
     artifactory:
       image: docker.bintray.io/jfrog/artifactory-oss:latest
       container_name: artifactorycompose
@@ -50,6 +54,7 @@ services:
         - 8082:8082
       networks:
         - docker_network
+        
 networks:
         docker_network:
           driver: bridge
